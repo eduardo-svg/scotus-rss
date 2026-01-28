@@ -432,18 +432,21 @@ def update_summary_feed(feed_xml_path: str, summary_xml_path: str) -> int:
     lbd.text = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S %z")
 
     added = 0
+    PER_REQUEST_SLEEP = 20 #seconds
+
     for it in missing:
         extracted_text = html_to_text(it.get("description_html", ""))
 
         # Optional: keep prompts bounded (avoids giant opinions).
         # Tune as you like.
-        if len(extracted_text) > 30_000:
-            extracted_text = extracted_text[:30_000] + "\n\n[Truncated]"
+        if len(extracted_text) > 50_000:
+            extracted_text = extracted_text[:50_000] + "\n\n[Truncated]"
 
         summary_md = gemini_summarize(extracted_text)
         print(summary_md[0:400]) #TESTING
         summary_html = md_to_html(summary_md)
         append_summary_item(channel, it, summary_html)
+        time.sleep(PER_REQUEST_SLEEP)
 
         added += 1
 
