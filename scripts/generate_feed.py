@@ -131,13 +131,13 @@ def main(max_items: int):
         fe.link(href=link)
         fe.pubDate(dt)
 
-        # Put text in description as HTML inside CDATA
         parts = [f'<p><a href="{link}">Source</a></p>']
         if pdf_url:
             parts.append(f'<p><a href="{pdf_url}">PDF</a></p>')
         if scrape_error:
             parts.append(f"<p><b>Error:</b> {scrape_error}</p>")
         parts.append(f"<pre>{full_text}</pre>")
+
         fe.description(xml_safe("\n".join(parts)))
 
     rss = fg.rss_str(pretty=True).decode("utf-8")
