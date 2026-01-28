@@ -6,6 +6,7 @@ from urllib.parse import urljoin
 import os
 import xml.etree.ElementTree as ET
 from html import unescape
+import markdown
 
 import requests
 from bs4 import BeautifulSoup
@@ -39,13 +40,13 @@ NO_RE = re.compile(r"\bNo\.\s*([^\s]+)", re.I)
 def build_prompt(extracted_text: str) -> str:
     return "\n".join([
         "You are a careful legal editor. Do not invent facts; if missing, write 'Not stated.'",
-        "Write ~350 words total (300–400). Plain English but legally precise. Avoid long quotes.",
+        "Write ~350 words total (300–400). Plain English but legally precise. Avoid long quotes. Use Markdown Formatting.",
         "",
         "IMPORTANT:",
         "- Do NOT include the case name/caption, docket number, court name, decided date, or source URL.",
         "- Do NOT start with 'In this case...' + caption. Assume metadata is shown elsewhere.",
         "",
-        "Output EXACTLY these headings, in this order:",
+        "Output ALL and EXACTLY these headings, in this order:",
         "Background:",
         "Holding:",
         "Reasoning:",
@@ -88,7 +89,7 @@ def gemini_summarize(extracted_text: str) -> str:
 
     payload = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.2, "maxOutputTokens": 800},
+        "generationConfig": {"temperature": 0.2, "maxOutputTokens": 1000},
     }
 
     last_err = None
@@ -323,6 +324,22 @@ def parse_rss_items(feed_xml_path: str):
         })
     return items
 
+def md_to_html(md: str) -> str:
+    md = (md or "").strip()
+    try:
+        return markdown.markdown(md, extensions=["extra"])
+    except Exception:
+        # minimal fallback: bold/italics + paragraphs
+        html = md
+        html = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", html)
+        html = re.sub(r"\*(.+?)\*", r"<em>\1</em>", html)
+        # headings are literally "Background:" etc; turn into <h3>
+        for h in REQUIRED_HEADINGS:
+            html = html.replace(h, f"<h3>{h[:-1]}</h3>")
+        # paragraph-ish
+        parts = [p.strip() for p in html.split("\n\n") if p.strip()]
+        return "\n".join(f"<p>{p.replace('\n','<br/>')}</p>" for p in parts)
+
 def load_existing_summary_guids(summary_xml_path: str) -> set[str]:
     if not os.path.exists(summary_xml_path):
         return set()
@@ -395,8 +412,12 @@ def update_summary_feed(feed_xml_path: str, summary_xml_path: str) -> int:
         if len(extracted_text) > 30_000:
             extracted_text = extracted_text[:30_000] + "\n\n[Truncated]"
 
-        summary = gemini_summarize(extracted_text)
-        append_summary_item(channel, it, summary)
+        ssummary_md = gemini_summarize(extracted_text)
+        print(ssummary_md) #TESTING
+        summary_md = normalize_four_sections(summary_md)
+        summary_html = md_to_html(summary_md)
+        append_summary_item(channel, it, summary_html)
+
         added += 1
 
     # Write summary.xml
