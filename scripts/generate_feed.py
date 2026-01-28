@@ -13,8 +13,20 @@ CHANNEL_LINK = "https://www.courtlistener.com/court/scotus/"
 TITLE = "SCOTUS (CourtListener) + Full Text"
 DESC = "Latest SCOTUS items with extracted PDF text."
 
-
 UA = "scotus-rss-bot/1.0 (+https://github.com/)"
+
+import re
+
+# XML 1.0 valid chars:
+#   #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]
+_invalid_xml_10 = re.compile(
+    r"[\x00-\x08\x0B\x0C\x0E-\x1F\uD800-\uDFFF\uFFFE\uFFFF]"
+)
+
+def xml_safe(s: str) -> str:
+    if s is None:
+        return ""
+    return _invalid_xml_10.sub("", str(s))
 
 def fetch(url: str) -> requests.Response:
     r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
@@ -67,7 +79,7 @@ def pdf_to_text(pdf_url: str):
     return extract_text(io.BytesIO(pdf_bytes)) or ""
 
 def normalize(s: str):
-    s = (s or "").replace("\r", "")
+    s = (s or "").replace("\x00", "").replace("\r", "")
     s = re.sub(r"[ \t]+\n", "\n", s)
     s = re.sub(r"\n{4,}", "\n\n\n", s)
     return s.strip()
@@ -84,8 +96,9 @@ def main(max_items: int):
     fg.lastBuildDate(datetime.now(timezone.utc))
 
     for entry in atom_entries(atom_xml, max_items):
-        title = tag_text(entry, "title") or "Untitled"
+        title = xml_safe(tag_text(entry, "title") or "Untitled")
         published = tag_text(entry, "published") or tag_text(entry, "updated")
+
         dt = dtparser.parse(published).astimezone(timezone.utc) if published else datetime.now(timezone.utc)
 
         opinion_url = pick_link(entry, rel="alternate") or ""
@@ -106,6 +119,11 @@ def main(max_items: int):
                 raise RuntimeError("Extracted text too small (likely scanned PDF).")
         except Exception as e:
             scrape_error = str(e)
+        
+        full_text = xml_safe(full_text)
+        scrape_error = xml_safe(scrape_error)
+        link = xml_safe(link)
+        pdf_url = xml_safe(pdf_url)
 
         fe = fg.add_entry()
         fe.id(link)
@@ -120,7 +138,7 @@ def main(max_items: int):
         if scrape_error:
             parts.append(f"<p><b>Error:</b> {scrape_error}</p>")
         parts.append(f"<pre>{full_text}</pre>")
-        fe.description("\n".join(parts))
+        fe.description(xml_safe("\n".join(parts)))
 
     rss = fg.rss_str(pretty=True).decode("utf-8")
     with open("feed.xml", "w", encoding="utf-8") as f:
