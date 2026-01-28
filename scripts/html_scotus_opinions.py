@@ -58,39 +58,64 @@ def build_prompt(extracted_text: str) -> str:
         "Source text:",
         extracted_text,
     ])
+def list_gemini_models(api_key: str, api_version: str = "v1") -> list[str]:
+    # Lists models available to *your* API key
+    url = f"https://generativelanguage.googleapis.com/{api_version}/models?key={api_key}"
+    r = requests.get(url, timeout=30)
+    r.raise_for_status()
+    data = r.json()
+    return [m["name"].replace("models/", "") for m in data.get("models", [])]
 
 def gemini_summarize(extracted_text: str) -> str:
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
         raise RuntimeError("Missing GEMINI_API_KEY in environment.")
 
-    # Convert HTML->text upstream; this function assumes text input.
     prompt = build_prompt(extracted_text)
 
-    # Gemini REST API (Generative Language API). Model name may vary; flash is usually fine for summaries.
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash:generateContent?key={api_key}"
+    api_version = os.getenv("GEMINI_API_VERSION", "v1")
+
+    # Try env override first, then sensible defaults.
+    candidates = []
+    if os.getenv("GEMINI_MODEL"):
+        candidates.append(os.getenv("GEMINI_MODEL"))
+    candidates += [
+        "gemini-3.0-flash",
+        "gemini-2.5-flash",
+        "gemini-2.5-flash-lite",
+        "gemini-2.5-pro",
+    ]
+
     payload = {
-        "contents": [
-            {
-                "role": "user",
-                "parts": [{"text": prompt}]
-            }
-        ],
-        "generationConfig": {
-            "temperature": 0.2,
-            "maxOutputTokens": 800
-        }
+        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+        "generationConfig": {"temperature": 0.2, "maxOutputTokens": 800},
     }
 
-    r = requests.post(url, json=payload, timeout=60)
-    if r.status_code != 200:
-        raise RuntimeError(f"Gemini API error {r.status_code}: {r.text[:500]}")
+    last_err = None
+    for model in candidates:
+        url = f"https://generativelanguage.googleapis.com/{api_version}/models/{model}:generateContent?key={api_key}"
+        r = requests.post(url, json=payload, timeout=60)
 
-    data = r.json()
-    try:
-        return data["candidates"][0]["content"]["parts"][0]["text"].strip()
-    except Exception:
-        raise RuntimeError(f"Unexpected Gemini response shape: {str(data)[:800]}")
+        if r.status_code == 404:
+            last_err = r.text
+            continue  # try next model
+        if r.status_code != 200:
+            raise RuntimeError(f"Gemini API error {r.status_code}: {r.text[:500]}")
+
+        data = r.json()
+        try:
+            return data["candidates"][0]["content"]["parts"][0]["text"].strip()
+        except Exception:
+            raise RuntimeError(f"Unexpected Gemini response shape: {str(data)[:800]}")
+
+    # If we got here, none of the candidate model names worked.
+    models = list_gemini_models(api_key, api_version=api_version)
+    raise RuntimeError(
+        "No candidate Gemini model worked for generateContent.\n"
+        f"Tried: {candidates}\n"
+        f"Models available to your key (sample): {models[:25]}\n"
+        f"Last 404: {last_err[:300] if last_err else 'None'}"
+    )
 
 # ---------------- Your existing scraping/feed code ----------------
 
