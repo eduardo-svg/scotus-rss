@@ -13,8 +13,8 @@ TOC_URL = "https://www.law.cornell.edu/supremecourt/text"
 BASE = "https://www.law.cornell.edu"
 
 CHANNEL_LINK = TOC_URL
-TITLE = "SCOTUS (Cornell LII) – Most Recent Decisions"
-DESC = "Most recent SCOTUS decisions from Cornell LII, with preserved HTML formatting."
+TITLE = "upreme Court of the United States - Recent Decisions"
+DESC = "Most recent SCOTUS decisions, generated from Cornell LII."
 
 UA = "scotus-rss-bot/1.0 (+https://github.com/)"
 
@@ -111,6 +111,10 @@ def extract_cornell_body_html(case_html: str) -> str:
             if tag.name == "a" and tag.get("href"):
                 attrs["href"] = tag["href"]
             tag.attrs = attrs
+
+        # Center headings (SCOTUS-style)
+    for h in main.find_all(["h1", "h2", "h3"]):
+        h["style"] = (h.get("style", "") + "; text-align:center;").lstrip(";")
 
     return str(main)
 
