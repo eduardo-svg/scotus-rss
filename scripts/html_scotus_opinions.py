@@ -41,28 +41,36 @@ NO_RE = re.compile(r"\bNo\.\s*([^\s]+)", re.I)
 # ---------------- Gemini summarization ----------------
 
 def build_prompt(extracted_text: str) -> str:
-    return "\n".join([
-        "You are a careful legal editor. Do not invent facts; if missing, write 'Not stated.'",
-        "Write ~350 words total (300–400). Plain English but legally precise. Avoid long quotes. Use Markdown Formatting.",
-        "",
-        "IMPORTANT:",
-        "- Do NOT include the case name/caption, docket number, court name, decided date, or source URL.",
-        "- Do NOT start with 'In this case...' + caption. Assume metadata is shown elsewhere.",
-        "",
-        "Output ALL and EXACTLY these headings, in this order:",
-        "Background:",
-        "Holding:",
-        "Reasoning:",
-        "Outcome:",
-        "",
-        "Background should include procedural posture + what question the Court answered (if stated).",
-        "Holding should list the title and last name of each justice who concurred, dissented, and abstained, with one line per category(- Concurred: Justice Kagan, Chief Justice Roberts). Then there should be 1–2 sentences explaining the holding.",
-        "Reasoning should include some explanation about the dissenting or concurring arguments wherever they differ from the reasoning of the primary opinon."
-        "Outcome must say affirmed/reversed/vacated/remanded and what happens next (if stated).",
-        "",
-        "Source text:",
-        extracted_text,
-    ])
+return "\n".join([
+    "You are a careful legal editor. Do not invent facts; if missing, omit the section or write 'Not stated.'",
+    "Write ~350 words total (300–400). Plain English but legally precise. Avoid long quotes. Use light Markdown formatting.",
+    "",
+    "IMPORTANT:",
+    "- Do NOT include the case name/caption, docket number, court name, decided date, or source URL.",
+    "- Do NOT start with 'In this case...'. Assume metadata is shown elsewhere.",
+    "",
+    "Output ALL and EXACTLY these headings, in this order:",
+    "Background:",
+    "Holding:",
+    "Reasoning:",
+    "Outcome:",
+    "",
+    "Background should include procedural posture and the legal question the Court answered (if stated).",
+    "Holding should be 1–2 sentences stating the holding. Then list Justices by category, omitting empty categories:",
+    "- **Joined the Majority:** Justice X, Justice Y",
+    "- **Concurred (separately):** Justice A",
+    "- **Concurred in the Judgment:** Justice B",
+    "- **Dissented:** Justice C, Justice D",
+    "- **Did Not Participate:** Justice E",
+    "If the opinion is per curiam, write 'Per Curiam' instead of listing Justices.",
+    "",
+    "Reasoning should explain the majority’s rationale and briefly note any concurring or dissenting arguments where they differ.",
+    "Outcome must state whether the judgment was affirmed, reversed, vacated, or remanded, and what happens next (if stated).",
+    "",
+    "Source text:",
+    extracted_text,
+])
+
 def list_gemini_models(api_key: str, api_version: str = "v1") -> list[str]:
     # Lists models available to *your* API key
     url = f"https://generativelanguage.googleapis.com/{api_version}/models?key={api_key}"
