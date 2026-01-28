@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>Supreme Court of the United States - Recent Decisions — Summaries</title>
+    <link>https://www.law.cornell.edu/supremecourt/text</link>
+    <description>Model-written summaries corresponding to the main feed items.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Jan 2026 20:20:37 +0000</lastBuildDate>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-482</guid>
+      <title>ELLINGBURG v. UNITED STATES</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-482</link>
+      <pubDate>Tue, 20 Jan 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case concerns Holsey Ellingburg, Jr., who was sentenced under the Mandatory Victims Restitution Act of 1996 (MVRA) and ordered to pay $7,567.25 in restitution. Ellingburg committed his crime before the MVRA’s enactment. He challenged his restitution obligation, arguing it violated the Ex Post Facto Clause. The Eighth Circuit concluded that restitution under the MVRA is not criminal punishment and therefore not subject to the Ex Post Facto Clause. The Court granted certiorari to answer the question of whether restitution under the MVRA constitutes criminal punishment for purposes of the Ex Post Facto Clause.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;Restitution under the MVRA is plainly criminal punishment for purposes of the Ex Post Facto Clause.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court applied principles of statutory construction, examining the text and structure of the MVRA. The Act labels restitution as a “penalty” for a criminal “offense,” restricts it to convicted criminal defendants, imposes it at sentencing alongside other criminal punishments, and is codified within Title 18 of the U.S. Code, which governs “Crimes and Criminal Procedure.” The Court also noted that victims do not initiate or settle the restitution process as they would in a civil proceeding. The Court’s prior precedents have also understood MVRA restitution to be criminal punishment.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgment of the U.S. Court of Appeals for the Eighth Circuit was reversed and remanded for further proceedings consistent with the Court’s opinion. The Court of Appeals may consider the Government’s arguments for affirmance of the District Court’s judgment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/25-5557</guid>
+      <title>HOWELL v. CIRCUIT COURT OF INDIANA</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/25-5557</link>
+      <pubDate>Tue, 20 Jan 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;The procedural posture is a petition for a writ of certiorari and a motion for leave to proceed &lt;em&gt;in forma pauperis&lt;/em&gt; to the Supreme Court of Indiana. The Court considered whether to dismiss the petition and whether to impose restrictions on the petitioner's ability to file future petitions &lt;em&gt;in forma pauperis&lt;/em&gt;. The question before the Court was whether to grant the petitioner's motion to proceed &lt;em&gt;in forma pauperis&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;The Court dismissed the petition for a writ of certiorari and denied the motion for leave to proceed &lt;em&gt;in forma pauperis&lt;/em&gt;. The Clerk is directed not to accept further petitions in noncriminal matters from the petitioner unless the docketing fee is paid and the petition complies with specific rules.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court has previously imposed filing bars on litigants who have repeatedly abused the Court's process by submitting frivolous petitions. The Court reasoned that such bars are necessary to curb serious abuses of its docket and ensure resources are allocated effectively. The petitioner, Danny Howell, had previously submitted petitions deemed "frivolous," and the Court applied a precedent established in &lt;em&gt;Martin v. District of Columbia Court of Appeals&lt;/em&gt;, which allows for prospective filing bars. Justice Jackson, dissenting, argued that a categorical, forward-looking filing bar, particularly for indigent incarcerated individuals, is a questionable restriction and that the Court should err on the side of keeping courthouse doors open to ensure equal justice.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The petition was dismissed, and the motion to proceed &lt;em&gt;in forma pauperis&lt;/em&gt; was denied. The Clerk is directed to refuse future &lt;em&gt;in forma pauperis&lt;/em&gt; petitions from the petitioner unless the required fee is paid and the petition complies with rules.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-440</guid>
+      <title>BERK v. CHOY</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-440</link>
+      <pubDate>Tue, 20 Jan 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case concerns Harold Berk’s lawsuit against Dr. Wilson Choy and Beebe Medical Center for medical malpractice under Delaware law. Berk sued in federal court but failed to provide an affidavit of merit, as required by Delaware Code Title 18, §6853. The District Court dismissed the lawsuit, and the Third Circuit affirmed. The question before the Supreme Court was whether Delaware’s affidavit law applies in federal court.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;Delaware’s affidavit law does not apply in federal court.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;When a plaintiff brings a state-law claim in federal court, the court must determine whether to apply state or federal law. The Rules of Decision Act directs federal courts to apply state substantive law unless otherwise required by the Constitution, a treaty, or a statute. The Rules Enabling Act authorizes the Supreme Court to adopt uniform rules of procedure, which displace contrary state law when a valid Federal Rule of Civil Procedure is on point. Here, Federal Rule of Civil Procedure 8 governs, as it prescribes the information a plaintiff must present in a complaint. Rule 8 requires only a "short and plain statement of the claim," implicitly rejecting the need for additional evidence like an affidavit. The Court rejected the defendants' argument that Delaware's law could be reinterpreted to avoid conflict with the Federal Rules.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgment of the Court of Appeals was reversed, and the case was remanded for further proceedings consistent with this opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-808</guid>
+      <title>CONEY ISLAND AUTO PARTS UNLIMITED, INC. v. BURTON</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-808</link>
+      <pubDate>Tue, 20 Jan 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case involves a dispute arising from a bankruptcy proceeding. Vista-Pro Automotive, LLC, initiated adversarial proceedings against Coney Island Auto Parts Unlimited, Inc., to collect unpaid invoices. Vista-Pro attempted service by mail, which Coney Island contends was improper. Coney Island failed to answer, resulting in a default judgment. After six years and attempts to enforce the judgment, Coney Island filed a motion to vacate, arguing the judgment was void due to improper service. The Bankruptcy Court and Sixth Circuit affirmed the denial of relief, finding Coney Island failed to file the motion within a "reasonable time" as required by Federal Rule of Civil Procedure 60(c)(1). The question before the Court was whether this "reasonable time" requirement applies to motions alleging a judgment is void under Rule 60(b)(4).&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;The Court held that Federal Rule of Civil Procedure 60(c)(1)’s reasonable-time limit applies to a motion alleging that a judgment is void under Rule 60(b)(4).&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court reasoned that the plain text of Rule 60(c)(1) explicitly states that motions under Rule 60(b) must be made within a reasonable time.  Since a motion to vacate a void judgment falls under Rule 60(b), the time limit applies. The Court rejected the argument that void judgments are inherently unenforceable and thus exempt from time limits, noting that other legal errors also have time limits for seeking relief. The Court also dismissed Coney Island’s arguments regarding historical practice, policy concerns, and constitutional avoidance, finding them unpersuasive.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The Court affirmed the judgment of the United States Court of Appeals for the Sixth Circuit. Coney Island’s motion to vacate the judgment was denied, and the bankruptcy trustee can proceed with enforcing the judgment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/25-51</guid>
+      <title>KLEIN v. MARTIN</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/25-51</link>
+      <pubDate>Mon, 26 Jan 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case involves a petition for a writ of certiorari to the Supreme Court of the United States concerning Charles Brandon Martin’s federal habeas petition. Martin was convicted in a Maryland court for the attempted murder of his girlfriend, Jodi Torok. He sought federal habeas relief, arguing that the State failed to disclose favorable impeachment evidence (a forensic report regarding a laptop) in violation of &lt;em&gt;Brady v. Maryland&lt;/em&gt;. The Fourth Circuit Court of Appeals reversed the district court’s denial of the petition and awarded Martin a new trial, reasoning that the state court’s decision was not consistent with AEDPA. The central question before the Supreme Court was whether the Fourth Circuit correctly interpreted and applied the Antiterrorism and Effective Death Penalty Act of 1996 (AEDPA) in reviewing the state court’s decision.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;The Supreme Court granted the State’s petition for a writ of certiorari and reversed the Fourth Circuit’s judgment. The Court held that the Fourth Circuit departed from the role AEDPA assigns to federal courts in reviewing state court decisions on habeas petitions.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court emphasized the strict standards governing federal habeas relief under AEDPA, requiring deference to state court decisions. It explained that federal courts must only grant relief when a state court’s decision is “contrary to” or “involved an unreasonable application of” “clearly established Federal law.” The Court found that the Fourth Circuit erred in concluding the state appellate court applied the wrong legal rule and in holding that every fairminded jurist would find the undisclosed forensic report material. The Court reasoned that the state court correctly applied &lt;em&gt;Brady&lt;/em&gt; precedent, stating that the evidence linking Martin to the crime was strong enough that the disclosure of the report would not have changed the outcome of the trial. The Court also criticized the Fourth Circuit for imposing opinion-writing standards on the state court and for failing to give the state court’s decision the “benefit of the doubt.”&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The Supreme Court reversed the Fourth Circuit’s judgment and remanded the case for further proceedings consistent with this opinion. This means the lower court’s decision is overturned, and the case will be sent back to the Fourth Circuit to be reconsidered in light of the Supreme Court’s ruling.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
