@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Jan 2026 23:34:15 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jan 2026 23:54:50 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -367,6 +367,24 @@ The Court held that a motion alleging a judgment is void must be brought within 
 &lt;p&gt;The Court reasoned that the plain text of Rule 60(c)(1) clearly states that motions under Rule 60(b) must be made within a reasonable time. The Court rejected the argument that void judgments are inherently unenforceable and thus exempt from time limits, noting that other legal errors are routinely subject to time constraints. The Court also dismissed Coney Island’s argument that courts have historically allowed voidness challenges at any time, emphasizing that Rule 60’s text and structure take precedence. The Court further rejected Coney Island’s policy arguments and concerns about constitutional avoidance, finding them unpersuasive. Justice Sotomayor, concurring in the judgment, argued that the Court unnecessarily addressed potential due process considerations, as Coney Island had not raised such an argument below or before this Court.&lt;/p&gt;
 &lt;h2&gt;Outcome:&lt;/h2&gt;
 &lt;p&gt;Affirmed. The judgment of the United States Court of Appeals for the Sixth Circuit was affirmed, meaning Coney Island’s motion to vacate the judgment was denied, and the default judgment against Coney Island remains in effect.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/25-51</guid>
+      <title>KLEIN v. MARTIN</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/25-51</link>
+      <pubDate>Mon, 26 Jan 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case involves a petition for a writ of certiorari concerning Charles Brandon Martin’s federal habeas petition. Martin was convicted in a Maryland court for the attempted murder of Jodi Torok. He sought federal habeas relief, arguing the State violated his due process rights by failing to disclose a forensic report related to a computer found at his home. The Fourth Circuit Court of Appeals reversed the District Court’s grant of habeas relief and affirmed the state court’s judgment, leading to the State’s petition for certiorari. The legal question presented is whether the Fourth Circuit correctly applied the Antiterrorism and Effective Death Penalty Act of 1996 (AEDPA) in reviewing the state court’s decision.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;The Court granted the State’s petition for a writ of certiorari and reversed the Fourth Circuit’s judgment. The Court held that the Fourth Circuit departed from the role AEDPA assigns to federal courts in reviewing state court decisions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Joined the Majority:&lt;/strong&gt; Per Curiam&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Did Not Participate:&lt;/strong&gt; Not stated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The majority opinion explained that AEDPA mandates a highly deferential standard when reviewing state court decisions on federal law. Federal courts must give the “benefit of the doubt” to state court rulings and are barred from imposing opinion-writing standards on state courts. The Court found the Fourth Circuit erred in concluding the state appellate court applied the wrong legal rule, as the state court correctly cited and synthesized relevant precedent regarding &lt;em&gt;Brady&lt;/em&gt; materiality. The Court also found the Fourth Circuit erred in holding that the undisclosed forensic report was material, noting the strong evidence linking Martin to the crime, including DNA evidence, witness testimony, and motive. The Court emphasized that a fairminded jurist could easily conclude that the report’s disclosure would not have altered the outcome of the trial.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgment of the Fourth Circuit was reversed, and the case was remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
