@@ -56,7 +56,8 @@ def build_prompt(extracted_text: str) -> str:
         "Outcome:",
         "",
         "Background should include procedural posture + what question the Court answered (if stated).",
-        "Holding should be 1–2 sentences.",
+        "Holding should list the title and last name of each justice who concurred, dissented, and abstained, with one line per category(- Concurred: Justice Kagan, Chief Justice Roberts). Then there should be 1–2 sentences explaining the holding.",
+        "Reasoning should include some explanation about the dissenting or concurring arguments wherever they differ from the reasoning of the primary opinon."
         "Outcome must say affirmed/reversed/vacated/remanded and what happens next (if stated).",
         "",
         "Source text:",
