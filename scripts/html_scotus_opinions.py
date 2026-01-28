@@ -74,7 +74,7 @@ def gemini_summarize(extracted_text: str) -> str:
 
     prompt = build_prompt(extracted_text)
 
-    api_version = os.getenv("GEMINI_API_VERSION", "v1")
+    api_version = os.getenv("GEMINI_API_VERSION", "v1beta")
 
     # Try env override first, then sensible defaults.
     candidates = []
@@ -82,9 +82,6 @@ def gemini_summarize(extracted_text: str) -> str:
         candidates.append(os.getenv("GEMINI_MODEL"))
     candidates += [
         "gemma-3-12b-it",
-        "gemma-3-27b-it",
-        "gemini-2.5-flash-lite",
-        "gemini-2.5-pro",
     ]
 
     payload = {
