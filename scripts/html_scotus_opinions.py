@@ -416,9 +416,8 @@ def update_summary_feed(feed_xml_path: str, summary_xml_path: str) -> int:
         if len(extracted_text) > 30_000:
             extracted_text = extracted_text[:30_000] + "\n\n[Truncated]"
 
-        ssummary_md = gemini_summarize(extracted_text)
-        print(ssummary_md) #TESTING
-        summary_md = normalize_four_sections(summary_md)
+        summary_md = gemini_summarize(extracted_text)
+        print(summary_md) #TESTING
         summary_html = md_to_html(summary_md)
         append_summary_item(channel, it, summary_html)
 
