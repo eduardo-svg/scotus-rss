@@ -23,7 +23,7 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - run: python scripts/html_scotus_opinions.py 5
+      - run: python scripts/html_scotus_opinions.py 50
 
       - run: |
           git config user.name "github-actions[bot]"

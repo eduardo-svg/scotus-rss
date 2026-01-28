@@ -120,12 +120,14 @@ def gemini_summarize(extracted_text: str) -> str:
             if r.status_code in (429, 503):
                 # Prefer explicit "retry in Xs" if present
                 if maybe_sleep_retry_in(r.text):
+                    print("Rate limited, cooling down.")
                     continue
                 # Otherwise, fall back to Retry-After header if present
                 ra = r.headers.get("Retry-After")
                 if ra:
                     try:
                         time.sleep(float(ra) + 0.5)
+                        print("Rate limited, cooling down.")
                         continue
                     except ValueError:
                         pass
