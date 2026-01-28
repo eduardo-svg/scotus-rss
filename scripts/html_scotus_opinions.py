@@ -13,7 +13,7 @@ TOC_URL = "https://www.law.cornell.edu/supremecourt/text"
 BASE = "https://www.law.cornell.edu"
 
 CHANNEL_LINK = TOC_URL
-TITLE = "upreme Court of the United States - Recent Decisions"
+TITLE = "Supreme Court of the United States - Recent Decisions"
 DESC = "Most recent SCOTUS decisions, generated from Cornell LII."
 
 UA = "scotus-rss-bot/1.0 (+https://github.com/)"
@@ -80,41 +80,73 @@ def fetch_recent_cases(max_items: int):
 
     return out
 
+def _append_style(tag, css: str) -> None:
+    prev = (tag.get("style") or "").strip()
+    if prev and not prev.endswith(";"):
+        prev += ";"
+    tag["style"] = (prev + " " + css).strip()
+
+def honor_cornell_classes_inline(main) -> None:
+    """
+    Mutates BeautifulSoup node `main` in-place:
+      - jy-center / forcejy-center -> text-align:center
+      - jy-right -> text-align:right
+      - jy-both -> text-align:justify
+      - span.smallcaps -> font-variant:small-caps
+    """
+    # Alignment: apply to any element carrying the class
+    for el in main.find_all(True):
+        classes = el.get("class") or []
+        if not classes:
+            continue
+
+        # small caps: only on spans marked smallcaps (Cornell does this)
+        if el.name == "span" and "smallcaps" in classes:
+            _append_style(el, "font-variant: small-caps;")
+            # keep classes/attrs as you like; this only injects inline style
+
+        # alignment signals
+        if "forcejy-center" in classes or "jy-center" in classes:
+            _append_style(el, "text-align: center;")
+        if "jy-right" in classes:
+            _append_style(el, "text-align: right;")
+        if "jy-both" in classes:
+            _append_style(el, "text-align: justify;")
+
 def extract_cornell_body_html(case_html: str) -> str:
     soup = BeautifulSoup(case_html, "lxml")
 
-    # From your snippet, #content1 is the page content wrapper; main#main exists too.
     main = soup.select_one("#content1") or soup.select_one("main#main") or soup.select_one("main")
     if not main:
         return ""
 
-    # Drop obvious chrome
     for sel in ["nav", "header", "footer", "aside", "script", "style"]:
         for x in main.select(sel):
             x.decompose()
 
-    # Keep formatting-friendly tags, drop the rest
+    # Inject inline alignment + small caps BEFORE sanitizing/unwrap
+    honor_cornell_classes_inline(main)
+
+    # Keep formatting-friendly tags
     allowed = {
         "p","br","hr","blockquote","pre","code","em","strong","b","i","u",
         "h1","h2","h3","h4",
         "ol","ul","li",
         "table","thead","tbody","tr","th","td",
-        "a","sup","sub"
+        "a","sup","sub","span","div"
     }
 
     for tag in list(main.find_all(True)):
         if tag.name not in allowed:
             tag.unwrap()
         else:
-            # keep only safe attrs
+            # keep only safe-ish attrs, but preserve 'style' we injected
             attrs = {}
             if tag.name == "a" and tag.get("href"):
                 attrs["href"] = tag["href"]
+            if tag.get("style"):
+                attrs["style"] = tag["style"]
             tag.attrs = attrs
-
-        # Center headings (SCOTUS-style)
-    for h in main.find_all(["h1", "h2", "h3"]):
-        h["style"] = (h.get("style", "") + "; text-align:center;").lstrip(";")
 
     return str(main)
 
