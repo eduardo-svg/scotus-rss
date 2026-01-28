@@ -56,13 +56,12 @@ def build_prompt(extracted_text: str) -> str:
         "Outcome:",
         "",
         "Background should include procedural posture and the legal question the Court answered (if stated).",
-        "Holding should be 1–2 sentences stating the holding. Then list Justices by category, omitting empty categories:",
+        "Holding should be 1–2 sentences stating the holding. Then, if the judgement is Per Curiam, just write 'Per Curiam', otherwise bullet-list Justices by position on the judgement, omitting empty categories:",
         "- **Joined the Majority:** Justice X, Justice Y",
         "- **Concurred (separately):** Justice A",
-        "- **Concurred in the Judgment:** Justice B",
+        "- **Concurred in the Judgement:** Justice B",
         "- **Dissented:** Justice C, Justice D",
         "- **Did Not Participate:** Justice E",
-        "If the opinion is per curiam, write 'Per Curiam' instead of listing Justices.",
         "",
         "Reasoning should explain the majority’s rationale and briefly note any concurring or dissenting arguments where they differ.",
         "Outcome must state whether the judgment was affirmed, reversed, vacated, or remanded, and what happens next (if stated).",
@@ -504,13 +503,20 @@ def main():
     max_items = int(sys.argv[1]) if len(sys.argv) > 1 else 10
 
     prev_latest = load_latest_guid_from_feed(FEED_XML_PATH)
+    summary_guids = load_existing_summary_guids(SUMMARY_XML_PATH)
 
     cases = fetch_recent_cases(1)
     latest = cases[0]["url"] if cases else ""
 
-    if prev_latest and latest and latest == prev_latest:
-        print("No new opinions (most recent GUID unchanged). Exiting early.")
+    if (
+        prev_latest
+        and latest
+        and latest == prev_latest
+        and latest in summary_guids
+    ):
+        print("No new opinions (latest already summarized). Exiting early.")
         return
+
 
     rss = build_rss(max_items)
     with open(FEED_XML_PATH, "w", encoding="utf-8") as f:
