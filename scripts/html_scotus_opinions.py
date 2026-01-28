@@ -1,5 +1,6 @@
 import re
 import sys
+import time
 from datetime import datetime, timezone
 from dateutil import parser as dtparser
 from urllib.parse import urljoin
@@ -67,52 +68,76 @@ def list_gemini_models(api_key: str, api_version: str = "v1") -> list[str]:
     data = r.json()
     return [m["name"].replace("models/", "") for m in data.get("models", [])]
 
+_retry_re = re.compile(r"retry in\s+([0-9.]+)s", re.I)
+
+def maybe_sleep_retry_in(msg: str) -> bool:
+    m = _retry_re.search(msg or "")
+    if not m:
+        return False
+    seconds = float(m.group(1))
+    time.sleep(seconds + 0.5)  # small cushion
+    return True
+
+
 def gemini_summarize(extracted_text: str) -> str:
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
         raise RuntimeError("Missing GEMINI_API_KEY in environment.")
 
     prompt = build_prompt(extracted_text)
-
     api_version = os.getenv("GEMINI_API_VERSION", "v1beta")
 
-    # Try env override first, then sensible defaults.
     candidates = []
     if os.getenv("GEMINI_MODEL"):
         candidates.append(os.getenv("GEMINI_MODEL"))
     candidates += [
         "gemma-3-12b-it",
+        "gemma-3-27b-it",
     ]
 
     payload = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.2, "maxOutputTokens": 1000},
+        "generationConfig": {"temperature": 0.2, "maxOutputTokens": 1400},
     }
 
     last_err = None
     for model in candidates:
         url = f"https://generativelanguage.googleapis.com/{api_version}/models/{model}:generateContent?key={api_key}"
-        r = requests.post(url, json=payload, timeout=60)
 
-        if r.status_code == 404:
-            last_err = r.text
-            continue  # try next model
-        if r.status_code != 200:
-            raise RuntimeError(f"Gemini API error {r.status_code}: {r.text[:500]}")
+        for attempt in range(8):
+            r = requests.post(url, json=payload, timeout=60)
 
-        data = r.json()
-        try:
-            return data["candidates"][0]["content"]["parts"][0]["text"].strip()
-        except Exception:
-            raise RuntimeError(f"Unexpected Gemini response shape: {str(data)[:800]}")
+            if r.status_code == 200:
+                data = r.json()
+                return data["candidates"][0]["content"]["parts"][0]["text"].strip()
 
-    # If we got here, none of the candidate model names worked.
+            # try next model name
+            if r.status_code == 404:
+                last_err = r.text
+                break
+
+            # rate/quota backoff
+            if r.status_code in (429, 503):
+                # Prefer explicit "retry in Xs" if present
+                if maybe_sleep_retry_in(r.text):
+                    continue
+                # Otherwise, fall back to Retry-After header if present
+                ra = r.headers.get("Retry-After")
+                if ra:
+                    try:
+                        time.sleep(float(ra) + 0.5)
+                        continue
+                    except ValueError:
+                        pass
+
+            raise RuntimeError(f"Gemini API error {r.status_code}: {r.text[:800]}")
+
     models = list_gemini_models(api_key, api_version=api_version)
     raise RuntimeError(
         "No candidate Gemini model worked for generateContent.\n"
         f"Tried: {candidates}\n"
         f"Models available to your key (sample): {models[:25]}\n"
-        f"Last 404: {last_err[:300] if last_err else 'None'}"
+        f"Last error: {last_err[:300] if last_err else 'None'}"
     )
 
 # ---------------- Your existing scraping/feed code ----------------
@@ -414,7 +439,7 @@ def update_summary_feed(feed_xml_path: str, summary_xml_path: str) -> int:
             extracted_text = extracted_text[:30_000] + "\n\n[Truncated]"
 
         summary_md = gemini_summarize(extracted_text)
-        print(summary_md) #TESTING
+        print(summary_md[0:400]) #TESTING
         summary_html = md_to_html(summary_md)
         append_summary_item(channel, it, summary_html)
 
