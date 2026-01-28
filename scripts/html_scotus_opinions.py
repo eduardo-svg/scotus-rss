@@ -3,6 +3,9 @@ import sys
 from datetime import datetime, timezone
 from dateutil import parser as dtparser
 from urllib.parse import urljoin
+import os
+import xml.etree.ElementTree as ET
+from html import unescape
 
 import requests
 from bs4 import BeautifulSoup
@@ -18,6 +21,9 @@ DESC = "Most recent SCOTUS decisions, generated from Cornell LII."
 
 UA = "scotus-rss-bot/1.0 (+https://github.com/)"
 
+FEED_XML_PATH = "feed.xml"
+SUMMARY_XML_PATH = "summary.xml"
+
 # --- XML safety (prevents lxml/feedgen crashes on control chars) ---
 _invalid_xml_10 = re.compile(r"[\x00-\x08\x0B\x0C\x0E-\x1F\uD800-\uDFFF\uFFFE\uFFFF]")
 def xml_safe(s: str) -> str:
@@ -27,6 +33,66 @@ def xml_safe(s: str) -> str:
 
 DECIDED_RE = re.compile(r"decided date:\s*([A-Za-z]+\s+\d{1,2},\s+\d{4})", re.I)
 NO_RE = re.compile(r"\bNo\.\s*([^\s]+)", re.I)
+
+# ---------------- Gemini summarization ----------------
+
+def build_prompt(extracted_text: str) -> str:
+    return "\n".join([
+        "You are a careful legal editor. Do not invent facts; if missing, write 'Not stated.'",
+        "Write ~350 words total (300–400). Plain English but legally precise. Avoid long quotes.",
+        "",
+        "IMPORTANT:",
+        "- Do NOT include the case name/caption, docket number, court name, decided date, or source URL.",
+        "- Do NOT start with 'In this case...' + caption. Assume metadata is shown elsewhere.",
+        "",
+        "Output EXACTLY these headings, in this order:",
+        "Background:",
+        "Holding:",
+        "Reasoning:",
+        "Outcome:",
+        "",
+        "Background should include procedural posture + what question the Court answered (if stated).",
+        "Holding should be 1–2 sentences.",
+        "Outcome must say affirmed/reversed/vacated/remanded and what happens next (if stated).",
+        "",
+        "Source text:",
+        extracted_text,
+    ])
+
+def gemini_summarize(extracted_text: str) -> str:
+    api_key = os.getenv("GEMINI_API_KEY")
+    if not api_key:
+        raise RuntimeError("Missing GEMINI_API_KEY in environment.")
+
+    # Convert HTML->text upstream; this function assumes text input.
+    prompt = build_prompt(extracted_text)
+
+    # Gemini REST API (Generative Language API). Model name may vary; flash is usually fine for summaries.
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+    payload = {
+        "contents": [
+            {
+                "role": "user",
+                "parts": [{"text": prompt}]
+            }
+        ],
+        "generationConfig": {
+            "temperature": 0.2,
+            "maxOutputTokens": 800
+        }
+    }
+
+    r = requests.post(url, json=payload, timeout=60)
+    if r.status_code != 200:
+        raise RuntimeError(f"Gemini API error {r.status_code}: {r.text[:500]}")
+
+    data = r.json()
+    try:
+        return data["candidates"][0]["content"]["parts"][0]["text"].strip()
+    except Exception:
+        raise RuntimeError(f"Unexpected Gemini response shape: {str(data)[:800]}")
+
+# ---------------- Your existing scraping/feed code ----------------
 
 def fetch(url: str) -> requests.Response:
     r = requests.get(
@@ -87,32 +153,21 @@ def _append_style(tag, css: str) -> None:
     tag["style"] = (prev + " " + css).strip()
 
 def honor_cornell_classes_inline(main) -> None:
-    """
-    Mutates BeautifulSoup node `main` in-place:
-      - jy-center / forcejy-center -> text-align:center
-      - jy-right -> text-align:right
-      - jy-both -> text-align:justify
-      - span.smallcaps -> font-variant:small-caps
-    """
-    # Alignment: apply to any element carrying the class
     for el in main.find_all(True):
         classes = el.get("class") or []
         if not classes:
             continue
 
-        # small caps: only on spans marked smallcaps (Cornell does this)
         if el.name == "span" and "smallcaps" in classes:
             _append_style(el, "font-variant: small-caps;")
-            # keep classes/attrs as you like; this only injects inline style
 
-        # alignment signals
         if "forcejy-center" in classes or "jy-center" in classes:
             _append_style(el, "text-align: center;")
         if "jy-right" in classes:
             _append_style(el, "text-align: right;")
         if "jy-both" in classes:
             _append_style(el, "text-align: justify;")
-            
+
 def force_center_headings(main) -> None:
     for h in main.find_all(["h1", "h2", "h3", "h4"]):
         prev = (h.get("style") or "").strip()
@@ -131,11 +186,9 @@ def extract_cornell_body_html(case_html: str) -> str:
         for x in main.select(sel):
             x.decompose()
 
-    # Inject inline alignment + small caps BEFORE sanitizing/unwrap
     honor_cornell_classes_inline(main)
     force_center_headings(main)
 
-    # Keep formatting-friendly tags
     allowed = {
         "p","br","hr","blockquote","pre","code","em","strong","b","i","u",
         "h1","h2","h3","h4",
@@ -148,7 +201,6 @@ def extract_cornell_body_html(case_html: str) -> str:
         if tag.name not in allowed:
             tag.unwrap()
         else:
-            # keep only safe-ish attrs, but preserve 'style' we injected
             attrs = {}
             if tag.name == "a" and tag.get("href"):
                 attrs["href"] = tag["href"]
@@ -159,13 +211,11 @@ def extract_cornell_body_html(case_html: str) -> str:
     return str(main)
 
 def parse_decided_to_dt(decided: str) -> datetime:
-    # decided like "January 26, 2026"
     if not decided:
         return datetime.now(timezone.utc)
 
     try:
-        d = dtparser.parse(decided).date()  # date only
-        # noon UTC prevents “previous day 6pm” in US time zones
+        d = dtparser.parse(decided).date()
         return datetime(d.year, d.month, d.day, 12, 0, 0, tzinfo=timezone.utc)
     except Exception:
         return datetime.now(timezone.utc)
@@ -194,7 +244,7 @@ def build_rss(max_items: int) -> str:
             scrape_error = str(e)
 
         fe = fg.add_entry()
-        fe.id(xml_safe(c["url"]))
+        fe.id(xml_safe(c["url"]))          # GUID
         fe.title(xml_safe(c["title"]))
         fe.link(href=xml_safe(c["url"]))
         fe.pubDate(parse_decided_to_dt(c.get("decided", "")))
@@ -210,11 +260,141 @@ def build_rss(max_items: int) -> str:
 
     return fg.rss_str(pretty=True).decode("utf-8")
 
+# ---------------- Summary feed creation/updating ----------------
+
+def html_to_text(html: str) -> str:
+    # Turn the RSS description HTML into clean-ish plain text for the model.
+    # (Also collapses whitespace.)
+    soup = BeautifulSoup(html or "", "lxml")
+    text = soup.get_text("\n", strip=True)
+    text = unescape(text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+def parse_rss_items(feed_xml_path: str):
+    """
+    Returns a list of dicts: guid, title, link, pubDate, description_html
+    """
+    tree = ET.parse(feed_xml_path)
+    root = tree.getroot()
+
+    channel = root.find("channel")
+    if channel is None:
+        return []
+
+    items = []
+    for item in channel.findall("item"):
+        guid = (item.findtext("guid") or "").strip()
+        title = (item.findtext("title") or "").strip()
+        link = (item.findtext("link") or "").strip()
+        pub = (item.findtext("pubDate") or "").strip()
+        desc = item.findtext("description") or ""
+        items.append({
+            "guid": guid,
+            "title": title,
+            "link": link,
+            "pubDate": pub,
+            "description_html": desc,
+        })
+    return items
+
+def load_existing_summary_guids(summary_xml_path: str) -> set[str]:
+    if not os.path.exists(summary_xml_path):
+        return set()
+
+    tree = ET.parse(summary_xml_path)
+    root = tree.getroot()
+    channel = root.find("channel")
+    if channel is None:
+        return set()
+
+    guids = set()
+    for item in channel.findall("item"):
+        guid = (item.findtext("guid") or "").strip()
+        if guid:
+            guids.add(guid)
+    return guids
+
+def ensure_summary_feed_root(summary_xml_path: str) -> ET.ElementTree:
+    """
+    If summary.xml exists: parse & return.
+    Else: create a new RSS 2.0 skeleton and return.
+    """
+    if os.path.exists(summary_xml_path):
+        return ET.parse(summary_xml_path)
+
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+    ET.SubElement(channel, "title").text = f"{TITLE} — Summaries"
+    ET.SubElement(channel, "link").text = CHANNEL_LINK
+    ET.SubElement(channel, "description").text = "Model-written summaries corresponding to the main feed items."
+    ET.SubElement(channel, "language").text = "en-us"
+    ET.SubElement(channel, "lastBuildDate").text = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S %z")
+    return ET.ElementTree(rss)
+
+def append_summary_item(channel: ET.Element, src_item: dict, summary_text: str) -> None:
+    item = ET.SubElement(channel, "item")
+    ET.SubElement(item, "guid").text = xml_safe(src_item["guid"])
+    ET.SubElement(item, "title").text = xml_safe(src_item["title"])
+    ET.SubElement(item, "link").text = xml_safe(src_item["link"])
+    if src_item.get("pubDate"):
+        ET.SubElement(item, "pubDate").text = xml_safe(src_item["pubDate"])
+    ET.SubElement(item, "description").text = xml_safe(summary_text)
+
+def update_summary_feed(feed_xml_path: str, summary_xml_path: str) -> int:
+    feed_items = parse_rss_items(feed_xml_path)
+    existing = load_existing_summary_guids(summary_xml_path)
+
+    missing = [it for it in feed_items if it["guid"] and it["guid"] not in existing]
+    if not missing:
+        return 0
+
+    summary_tree = ensure_summary_feed_root(summary_xml_path)
+    root = summary_tree.getroot()
+    channel = root.find("channel")
+    if channel is None:
+        raise RuntimeError("summary.xml missing <channel> root.")
+
+    # Update build date
+    lbd = channel.find("lastBuildDate")
+    if lbd is None:
+        lbd = ET.SubElement(channel, "lastBuildDate")
+    lbd.text = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S %z")
+
+    added = 0
+    for it in missing:
+        extracted_text = html_to_text(it.get("description_html", ""))
+
+        # Optional: keep prompts bounded (avoids giant opinions).
+        # Tune as you like.
+        if len(extracted_text) > 30_000:
+            extracted_text = extracted_text[:30_000] + "\n\n[Truncated]"
+
+        summary = gemini_summarize(extracted_text)
+        append_summary_item(channel, it, summary)
+        added += 1
+
+    # Write summary.xml
+    ET.indent(summary_tree, space="  ", level=0)  # Python 3.9+
+    summary_tree.write(summary_xml_path, encoding="utf-8", xml_declaration=True)
+
+    return added
+
+# ---------------- main ----------------
+
 def main():
     max_items = int(sys.argv[1]) if len(sys.argv) > 1 else 10
+
     rss = build_rss(max_items)
-    with open("feed.xml", "w", encoding="utf-8") as f:
+    with open(FEED_XML_PATH, "w", encoding="utf-8") as f:
         f.write(rss)
+
+    try:
+        added = update_summary_feed(FEED_XML_PATH, SUMMARY_XML_PATH)
+        print(f"summary.xml updated: {added} new item(s) added.")
+    except Exception as e:
+        # Don’t break feed generation if summarization fails.
+        print(f"WARNING: summary feed update failed: {e}", file=sys.stderr)
 
 if __name__ == "__main__":
     main()
