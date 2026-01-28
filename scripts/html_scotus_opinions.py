@@ -68,7 +68,7 @@ def gemini_summarize(extracted_text: str) -> str:
     prompt = build_prompt(extracted_text)
 
     # Gemini REST API (Generative Language API). Model name may vary; flash is usually fine for summaries.
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash:generateContent?key={api_key}"
     payload = {
         "contents": [
             {
