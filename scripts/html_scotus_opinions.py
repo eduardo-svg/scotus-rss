@@ -12,6 +12,8 @@ import markdown
 import requests
 from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
+from email.utils import parsedate_to_datetime
+
 
 
 TOC_URL = "https://www.law.cornell.edu/supremecourt/text"
@@ -367,6 +369,37 @@ def md_to_html(md: str) -> str:
             for p in parts
         )
 
+def load_latest_guid_from_feed(feed_xml_path: str) -> str:
+    if not os.path.exists(feed_xml_path):
+        return ""
+
+    try:
+        tree = ET.parse(feed_xml_path)
+        root = tree.getroot()
+        channel = root.find("channel")
+        if channel is None:
+            return ""
+
+        latest_dt = None
+        latest_guid = ""
+
+        for item in channel.findall("item"):
+            guid = (item.findtext("guid") or "").strip()
+            pub = item.findtext("pubDate")
+            if not guid or not pub:
+                continue
+            try:
+                dt = parsedate_to_datetime(pub)
+            except Exception:
+                continue
+            if latest_dt is None or dt > latest_dt:
+                latest_dt = dt
+                latest_guid = guid
+
+        return latest_guid
+    except Exception:
+        return ""
+
 
 def load_existing_summary_guids(summary_xml_path: str) -> set[str]:
     if not os.path.exists(summary_xml_path):
@@ -460,6 +493,15 @@ def update_summary_feed(feed_xml_path: str, summary_xml_path: str) -> int:
 
 def main():
     max_items = int(sys.argv[1]) if len(sys.argv) > 1 else 10
+
+    prev_latest = load_latest_guid_from_feed(FEED_XML_PATH)
+
+    cases = fetch_recent_cases(1)
+    latest = cases[0]["url"] if cases else ""
+
+    if prev_latest and latest and latest == prev_latest:
+        print("No new opinions (most recent GUID unchanged). Exiting early.")
+        return
 
     rss = build_rss(max_items)
     with open(FEED_XML_PATH, "w", encoding="utf-8") as f:
