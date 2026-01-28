@@ -151,10 +151,14 @@ def extract_cornell_body_html(case_html: str) -> str:
     return str(main)
 
 def parse_decided_to_dt(decided: str) -> datetime:
+    # decided like "January 26, 2026"
     if not decided:
         return datetime.now(timezone.utc)
+
     try:
-        return dtparser.parse(decided).astimezone(timezone.utc)
+        d = dtparser.parse(decided).date()  # date only
+        # noon UTC prevents “previous day 6pm” in US time zones
+        return datetime(d.year, d.month, d.day, 12, 0, 0, tzinfo=timezone.utc)
     except Exception:
         return datetime.now(timezone.utc)
 
