@@ -338,7 +338,11 @@ def md_to_html(md: str) -> str:
             html = html.replace(h, f"<h3>{h[:-1]}</h3>")
         # paragraph-ish
         parts = [p.strip() for p in html.split("\n\n") if p.strip()]
-        return "\n".join(f"<p>{p.replace('\n','<br/>')}</p>" for p in parts)
+        return "\n".join(
+            "<p>{}</p>".format(p.replace("\n", "<br/>"))
+            for p in parts
+        )
+
 
 def load_existing_summary_guids(summary_xml_path: str) -> set[str]:
     if not os.path.exists(summary_xml_path):
