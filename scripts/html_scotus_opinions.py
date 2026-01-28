@@ -81,8 +81,8 @@ def gemini_summarize(extracted_text: str) -> str:
     if os.getenv("GEMINI_MODEL"):
         candidates.append(os.getenv("GEMINI_MODEL"))
     candidates += [
-        "gemini-3.0-flash",
-        "gemini-2.5-flash",
+        "gemma-3-12b-it",
+        "gemma-3-27b-it",
         "gemini-2.5-flash-lite",
         "gemini-2.5-pro",
     ]
