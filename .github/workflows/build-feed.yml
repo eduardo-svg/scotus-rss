@@ -2,7 +2,7 @@ name: Build RSS feed
 
 on:
   schedule:
-    - cron: "0 */1 * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -20,7 +20,7 @@ jobs:
 
       - run: pip install requests feedgen pdfminer.six python-dateutil
 
-      - run: python scripts/generate_feed.py 5
+      - run: python scripts/html_scotus_opinions.py 5
 
       - run: |
           git config user.name "github-actions[bot]"
