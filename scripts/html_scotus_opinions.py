@@ -112,6 +112,13 @@ def honor_cornell_classes_inline(main) -> None:
             _append_style(el, "text-align: right;")
         if "jy-both" in classes:
             _append_style(el, "text-align: justify;")
+            
+def force_center_headings(main) -> None:
+    for h in main.find_all(["h1", "h2", "h3", "h4"]):
+        prev = (h.get("style") or "").strip()
+        if prev and not prev.endswith(";"):
+            prev += ";"
+        h["style"] = (prev + " text-align: center;").strip()
 
 def extract_cornell_body_html(case_html: str) -> str:
     soup = BeautifulSoup(case_html, "lxml")
@@ -126,6 +133,7 @@ def extract_cornell_body_html(case_html: str) -> str:
 
     # Inject inline alignment + small caps BEFORE sanitizing/unwrap
     honor_cornell_classes_inline(main)
+    force_center_headings(main)
 
     # Keep formatting-friendly tags
     allowed = {
