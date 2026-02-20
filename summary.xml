@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Feb 2026 16:41:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Feb 2026 20:33:57 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -302,6 +302,20 @@ The Court reasoned that the statute’s restrictions on financial transactions e
 &lt;p&gt;Justice A, concurring, wrote separately to emphasize the importance of carefully balancing national security concerns with the need to protect the vitality of the national economy. Justice B, dissenting, argued that the statute was narrowly tailored to address a specific threat and did not represent an unconstitutional intrusion into interstate commerce. Justice B believed the lower court’s decision should be affirmed, noting the state’s compelling interest in preventing financial support for terrorist organizations.&lt;/p&gt;
 &lt;p&gt;Outcome:
 The judgment of the lower court was reversed. The case was remanded with instructions for the lower court to enter judgment consistent with the Supreme Court’s opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-1287</guid>
+      <title>LEARNING RESOURCES, INC. v. TRUMP</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-1287</link>
+      <pubDate>Fri, 20 Feb 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case involves a challenge to tariffs imposed by President Trump under the International Emergency Economic Powers Act (IEEPA). Shortly after taking office, President Trump sought to address drug trafficking from Canada, Mexico, and China, as well as trade deficits. He declared national emergencies and imposed tariffs to address these issues. Learning Resources, Inc., and V.O.S. Selections, Inc., sued, alleging that IEEPA does not authorize the President to impose tariffs. The District Court granted a preliminary injunction against the tariffs, and the Federal Circuit affirmed in part, concluding that IEEPA’s “regulate” authority did not encompass tariff imposition. The government appealed.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;IEEPA does not authorize the President to impose tariffs. The judgment in No. 24-1287 (Learning Resources case) is vacated, and the case is remanded with instructions to dismiss for lack of jurisdiction; the judgment in No. 25-250 (V.O.S. Selections case) is affirmed.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court reasoned that the Constitution vests the power to lay and collect taxes, duties, imposts, and excises in Congress, not the President. While the President conceded no inherent authority to impose tariffs during peacetime, the government argued IEEPA grants this power. The Court rejected this argument, finding that IEEPA’s language, particularly the term "regulate," does not authorize the President to impose tariffs. The Court invoked the "major questions doctrine," noting that Congress would likely not delegate such a significant power through ambiguous language, especially concerning the power of the purse. The Court also emphasized the lack of historical precedent for using IEEPA to impose tariffs and the significant economic and political implications of such authority.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgments were split. The judgment in the &lt;em&gt;Learning Resources&lt;/em&gt; case was vacated and remanded for dismissal. The judgment in the &lt;em&gt;V.O.S. Selections&lt;/em&gt; case was affirmed.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
