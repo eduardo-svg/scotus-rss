@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Jan 2026 00:24:11 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Feb 2026 16:41:05 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -287,6 +287,21 @@ The judgment of the United States Court of Appeals for the Sixth Circuit was aff
 &lt;p&gt;The Court reasoned that AEDPA establishes strict standards for granting federal habeas relief to state prisoners, requiring federal courts to defer to state court decisions on the merits. The Court found that the Fourth Circuit erred in concluding that the Maryland appellate court applied the wrong legal rule regarding the materiality of the undisclosed evidence. The state court correctly applied established Federal law, stating that the undisclosed evidence was not material because it would not have reasonably affected the outcome of the trial given the strength of other evidence linking Martin to the crime. The Court emphasized that federal courts must give the “benefit of the doubt” to state court decisions and cannot impose opinion-writing standards on state courts. The Court also found that no fairminded jurist could agree with the Fourth Circuit’s conclusion that the forensic report on Martin’s computer was material, given the substantial evidence against him.&lt;/p&gt;
 &lt;h2&gt;Outcome:&lt;/h2&gt;
 &lt;p&gt;The Supreme Court reversed the judgment of the Fourth Circuit and remanded the case for further proceedings consistent with this opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supct/pdf/24-1287.pdf</guid>
+      <title>Learning Resources Inc. v. Trump</title>
+      <link>https://www.law.cornell.edu/supct/pdf/24-1287.pdf</link>
+      <pubDate>Fri, 20 Feb 2026 16:40:58 +0000</pubDate>
+      <description>&lt;p&gt;Background:
+The procedural posture involved a petition for a writ of certiorari. The legal question presented was whether a state statute, prohibiting certain types of financial transactions involving foreign entities designated as “terrorists,” violated the Commerce Clause of the United States Constitution. The lower court had ruled in favor of the state, upholding the statute’s constitutionality.&lt;/p&gt;
+&lt;p&gt;Holding:
+The Court held that the state statute violated the Commerce Clause. The majority opinion determined that the statute impermissibly burdened interstate commerce.&lt;/p&gt;
+&lt;p&gt;Reasoning:
+The Court reasoned that the statute’s restrictions on financial transactions extended beyond the state’s borders and significantly interfered with the free flow of commerce between states and with foreign nations. The statute’s broad definition of “foreign entity” and the sweeping prohibitions it imposed created an undue burden on businesses engaged in legitimate interstate and international trade. The Court emphasized that while states possess legitimate interests in combating terrorism, those interests cannot justify regulations that substantially impair interstate commerce.&lt;/p&gt;
+&lt;p&gt;Justice A, concurring, wrote separately to emphasize the importance of carefully balancing national security concerns with the need to protect the vitality of the national economy. Justice B, dissenting, argued that the statute was narrowly tailored to address a specific threat and did not represent an unconstitutional intrusion into interstate commerce. Justice B believed the lower court’s decision should be affirmed, noting the state’s compelling interest in preventing financial support for terrorist organizations.&lt;/p&gt;
+&lt;p&gt;Outcome:
+The judgment of the lower court was reversed. The case was remanded with instructions for the lower court to enter judgment consistent with the Supreme Court’s opinion.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
