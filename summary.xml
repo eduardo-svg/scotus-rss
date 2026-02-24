@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Feb 2026 19:04:21 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Feb 2026 21:36:30 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -345,6 +345,20 @@ The judgment of the lower court was reversed. The case was remanded with instruc
 &lt;p&gt;The Court emphasized that federal courts have limited jurisdiction and must satisfy themselves of their own and the lower courts’ jurisdiction. The Court reaffirmed that a district court’s judgment must be vacated if it lacked jurisdiction when the case was filed or removed. While a district court can cure a jurisdictional defect by properly dismissing a nondiverse party before final judgment, this requires a complete and final dismissal, not an interlocutory one. The Court found that the District Court’s dismissal of Whole Foods was interlocutory and did not dispose of the entire case, and therefore did not cure the jurisdictional defect. The Court rejected Hain’s arguments that the correctness of the dismissal is irrelevant or that Rule 21 could be used to dismiss Whole Foods, finding that allowing such a dismissal would permit courts to expand their jurisdiction beyond Congressional limits and override the Palmquists’ choice of forum.&lt;/p&gt;
 &lt;h2&gt;Outcome:&lt;/h2&gt;
 &lt;p&gt;The judgment of the Court of Appeals was affirmed, and the case was remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/25A926</guid>
+      <title>TROTTER v. FLORIDA</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/25A926</link>
+      <pubDate>Tue, 24 Feb 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;The petitioner, Melvin Trotter, sought a stay of execution and a writ of certiorari from the Supreme Court of the United States. He argued that Florida is likely to maladminister its lethal-injection protocol, increasing the risk of a mangled execution that would violate his Eighth Amendment rights. Trotter did not challenge Florida’s use of lethal injection generally or the protocol itself, but rather its potential misapplication. The procedural posture was an application for a stay and a petition for a writ of certiorari following a decision by the Supreme Court of Florida.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;The Supreme Court denied Trotter’s application for a stay of execution and denied the petition for a writ of certiorari.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The majority determined that Trotter failed to present sufficient evidentiary support to demonstrate that Florida’s administration of its lethal-injection protocol is “sure or very likely to cause serious and needless suffering,” as required by Eighth Amendment precedent. Justice Sotomayor, in a concurring opinion, expressed concern regarding Florida’s implementation of its execution protocol and the secrecy surrounding it. She noted the possibility of expired drugs, incorrect doses, non-protocol drugs, and recordkeeping lapses. Justice Sotomayor criticized the Florida Supreme Court’s approach, which she characterized as placing prisoners in a “Catch-22” by denying access to records needed to substantiate Eighth Amendment claims. She argued for transparency in executions to ensure compliance with constitutional obligations.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The petition for a writ of certiorari was denied. The application for a stay of execution was also denied, meaning Trotter’s execution will proceed as scheduled. Not stated is whether any further action will be taken regarding the concerns raised by Justice Sotomayor.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
