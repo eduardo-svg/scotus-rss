@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Feb 2026 20:33:57 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Feb 2026 19:04:21 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -316,6 +316,35 @@ The judgment of the lower court was reversed. The case was remanded with instruc
 &lt;p&gt;The Court reasoned that the Constitution vests the power to lay and collect taxes, duties, imposts, and excises in Congress, not the President. While the President conceded no inherent authority to impose tariffs during peacetime, the government argued IEEPA grants this power. The Court rejected this argument, finding that IEEPA’s language, particularly the term "regulate," does not authorize the President to impose tariffs. The Court invoked the "major questions doctrine," noting that Congress would likely not delegate such a significant power through ambiguous language, especially concerning the power of the purse. The Court also emphasized the lack of historical precedent for using IEEPA to impose tariffs and the significant economic and political implications of such authority.&lt;/p&gt;
 &lt;h2&gt;Outcome:&lt;/h2&gt;
 &lt;p&gt;The judgments were split. The judgment in the &lt;em&gt;Learning Resources&lt;/em&gt; case was vacated and remanded for dismissal. The judgment in the &lt;em&gt;V.O.S. Selections&lt;/em&gt; case was affirmed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-351</guid>
+      <title>POSTAL SERVICE v. KONAN</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-351</link>
+      <pubDate>Tue, 24 Feb 2026 12:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Okay, here's the breakdown of the case, adhering to your instructions and format.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Respondent Lebene Konan alleged that United States Postal Service (USPS) employees intentionally withheld her mail and interfered with its delivery to rental properties she owned in Texas. After unsuccessful administrative complaints, Konan sued the USPS in federal court, bringing state-law tort claims. The District Court dismissed the complaint under the Federal Tort Claims Act’s (FTCA) postal exception, which shields the government from claims "arising out of the loss, miscarriage, or negligent transmission of letters or postal matter." The Fifth Circuit reversed, holding that "intentional act of not delivering the mail at all" was not encompassed by the exception. The Supreme Court granted certiorari to resolve the split in circuit court interpretations of the postal exception.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Holding:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The United States retains sovereign immunity for claims arising out of the intentional nondelivery of mail because both “miscarriage” and “loss” of mail under the FTCA’s postal exception can occur as a result of the Postal Service’s intentional failure to deliver the mail.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reasoning:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Court interpreted statutory terms according to their ordinary meanings at the time of enactment (1946). Both "miscarriage" and "loss" of mail, the Court reasoned, can result from intentional acts by the Postal Service. The Court rejected Konan’s arguments that these terms were limited to negligent failures or destruction of mail, citing historical dictionary definitions and usage examples. The Court also dismissed Konan’s arguments regarding the "negligent transmission" qualifier and the presumption against surplusage, finding that Congress intended broad language to limit claims against the Postal Service.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outcome:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The judgment of the Fifth Circuit was vacated, and the case was remanded for further proceedings consistent with the Court’s opinion. This means the lower court must reconsider Konan’s claims in light of the Supreme Court’s ruling on the scope of the FTCA’s postal exception. It is not stated whether Konan’s claims will ultimately be successful.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-724</guid>
+      <title>HAIN CELESTIAL GROUP, INC. v. PALMQUIST</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-724</link>
+      <pubDate>Tue, 24 Feb 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case involves a dispute between the Palmquist family and Hain Celestial Group, Inc. (Hain) regarding baby food products. The Palmquists allege that their child, E. P., suffered developmental disorders due to heavy-metal poisoning from Hain’s baby food. Following a House subcommittee report highlighting elevated heavy-metal levels in certain baby foods, the Palmquists sued Hain and Whole Foods Market, Inc. in Texas state court. Hain removed the case to federal court, arguing that Whole Foods was improperly joined to defeat diversity jurisdiction. The District Court agreed with Hain, dismissed Whole Foods, and denied the Palmquists’ motion to remand. The case proceeded against Hain alone, resulting in a judgment for Hain, which was subsequently reversed by the Fifth Circuit. The Supreme Court granted certiorari to resolve a split among the Courts of Appeals regarding whether vacatur is required in these circumstances.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;The Supreme Court held that because the District Court’s erroneous dismissal of Whole Foods did not cure the jurisdictional defect that existed when the case was removed to federal court, the Fifth Circuit correctly vacated the judgment in Hain’s favor.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court emphasized that federal courts have limited jurisdiction and must satisfy themselves of their own and the lower courts’ jurisdiction. The Court reaffirmed that a district court’s judgment must be vacated if it lacked jurisdiction when the case was filed or removed. While a district court can cure a jurisdictional defect by properly dismissing a nondiverse party before final judgment, this requires a complete and final dismissal, not an interlocutory one. The Court found that the District Court’s dismissal of Whole Foods was interlocutory and did not dispose of the entire case, and therefore did not cure the jurisdictional defect. The Court rejected Hain’s arguments that the correctness of the dismissal is irrelevant or that Rule 21 could be used to dismiss Whole Foods, finding that allowing such a dismissal would permit courts to expand their jurisdiction beyond Congressional limits and override the Palmquists’ choice of forum.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgment of the Court of Appeals was affirmed, and the case was remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
