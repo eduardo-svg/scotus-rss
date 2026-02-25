@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Feb 2026 21:36:30 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Feb 2026 16:04:33 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -359,6 +359,35 @@ The judgment of the lower court was reversed. The case was remanded with instruc
 &lt;p&gt;The majority determined that Trotter failed to present sufficient evidentiary support to demonstrate that Florida’s administration of its lethal-injection protocol is “sure or very likely to cause serious and needless suffering,” as required by Eighth Amendment precedent. Justice Sotomayor, in a concurring opinion, expressed concern regarding Florida’s implementation of its execution protocol and the secrecy surrounding it. She noted the possibility of expired drugs, incorrect doses, non-protocol drugs, and recordkeeping lapses. Justice Sotomayor criticized the Florida Supreme Court’s approach, which she characterized as placing prisoners in a “Catch-22” by denying access to records needed to substantiate Eighth Amendment claims. She argued for transparency in executions to ensure compliance with constitutional obligations.&lt;/p&gt;
 &lt;h2&gt;Outcome:&lt;/h2&gt;
 &lt;p&gt;The petition for a writ of certiorari was denied. The application for a stay of execution was also denied, meaning Trotter’s execution will proceed as scheduled. Not stated is whether any further action will be taken regarding the concerns raised by Justice Sotomayor.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-758</guid>
+      <title>GEO GROUP, INC. v. MENOCAL</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-758</link>
+      <pubDate>Wed, 25 Feb 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case concerns a class action lawsuit filed by Alejandro Menocal, a former detainee at a private detention facility in Aurora, Colorado, operated by GEO Group under contract with U.S. Immigration and Customs Enforcement (ICE). Menocal alleged that GEO’s work policies for detainees violated a federal bar on forced labor and Colorado’s prohibition on unjust enrichment. GEO argued the suit should be dismissed under &lt;em&gt;Yearsley v. W. A. Ross Constr. Co.&lt;/em&gt;, claiming ICE had authorized and directed the challenged labor policies. The District Court disagreed and denied GEO’s motion to dismiss. GEO appealed, and the Tenth Circuit dismissed the appeal for lack of jurisdiction. The legal question is whether a pretrial order denying &lt;em&gt;Yearsley&lt;/em&gt; protection qualifies for immediate interlocutory review.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;Because &lt;em&gt;Yearsley&lt;/em&gt; provides a potential merits defense rather than an immunity from suit, a pretrial order denying &lt;em&gt;Yearsley&lt;/em&gt; protection is not immediately appealable.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court reasoned that a pretrial order denying a &lt;em&gt;Yearsley&lt;/em&gt; defense does not satisfy the requirements for immediate appeal under &lt;em&gt;Cohen v. Beneficial Industrial Loan Corp.&lt;/em&gt;, specifically the requirement that the order be “effectively unreviewable on appeal from a final judgment.” The Court distinguished between a merits defense and an immunity, noting that an immunity allows a defendant to avoid trial altogether, while a merits defense allows for a finding of non-liability after a trial. Because &lt;em&gt;Yearsley&lt;/em&gt; offers a defense based on lawful conduct, it does not provide an immunity. The Court also rejected GEO’s argument that &lt;em&gt;Yearsley&lt;/em&gt; confers “derivative sovereign immunity,” finding it inconsistent with established principles of sovereign immunity.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgment of the Tenth Circuit was affirmed, and the case was remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-557</guid>
+      <title>VILLARREAL v. TEXAS</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-557</link>
+      <pubDate>Wed, 25 Feb 2026 12:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Okay, here's the breakdown of the case, adhering to your instructions:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;David Villarreal was convicted of murder after testifying at his trial. During his testimony, the trial court ordered a 24-hour recess and instructed Villarreal’s attorneys not to “manage his testimony.” The judge clarified that Villarreal could still consult with his attorneys about certain topics, such as sentencing issues. Villarreal appealed, arguing the order violated his Sixth Amendment right to counsel. The Texas Court of Criminal Appeals concluded the order was permissible. The Supreme Court granted certiorari to address whether a qualified order restricting discussion of testimony during a mid-testimony recess violates the Sixth Amendment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Holding:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A qualified order that prohibits only discussion of the defendant’s testimony for its own sake during a mid-testimony overnight recess permissibly balances the defendant’s Sixth Amendment right to counsel against the burden of offering unaltered trial testimony and does not violate the Constitution.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reasoning:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Sixth Amendment guarantees a criminal defendant’s right to consult with counsel, but this right is not absolute when a defendant takes the witness stand. The Court distinguished &lt;em&gt;Geders&lt;/em&gt; and &lt;em&gt;Perry&lt;/em&gt;, noting that &lt;em&gt;Perry&lt;/em&gt; established that a judge may prevent a testifying defendant from conferring about ongoing testimony during a brief recess because any such conversation would likely relate to the testimony. The Court reasoned that prohibiting discussion of testimony itself, rather than incidental discussion related to other protected topics, does not violate the Sixth Amendment. Such an order advances the truth-seeking function of the trial. The Court rejected the argument that such an order would chill protected discussions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outcome:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The judgment of the Texas Court of Criminal Appeals was affirmed. The case is remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
