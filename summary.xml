@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Feb 2026 16:04:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2026 15:42:33 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -388,6 +388,20 @@ The judgment of the lower court was reversed. The case was remanded with instruc
 &lt;p&gt;The Sixth Amendment guarantees a criminal defendant’s right to consult with counsel, but this right is not absolute when a defendant takes the witness stand. The Court distinguished &lt;em&gt;Geders&lt;/em&gt; and &lt;em&gt;Perry&lt;/em&gt;, noting that &lt;em&gt;Perry&lt;/em&gt; established that a judge may prevent a testifying defendant from conferring about ongoing testimony during a brief recess because any such conversation would likely relate to the testimony. The Court reasoned that prohibiting discussion of testimony itself, rather than incidental discussion related to other protected topics, does not violate the Sixth Amendment. Such an order advances the truth-seeking function of the trial. The Court rejected the argument that such an order would chill protected discussions.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Outcome:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The judgment of the Texas Court of Criminal Appeals was affirmed. The case is remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/25-457</guid>
+      <title>JOHNSON v. HIGH DESERT STATE PRISON 1JOHNSON v. HIGH DESERT STATE PRISON</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/25-457</link>
+      <pubDate>Mon, 02 Mar 2026 12:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Background:
+Petitioners, incarcerated at High Desert State Prison, filed a lawsuit alleging mistreatment by corrections officers, seeking to proceed &lt;em&gt;in forma pauperis&lt;/em&gt; (IFP). The District Court ordered them to file separate lawsuits, concluding that the Prison Litigation Reform Act (PLRA) required each prisoner to pay the full $350 filing fee, even when proceeding IFP, and prohibiting fee splitting. The Ninth Circuit reversed the decision to sever the cases but affirmed the District Court’s ruling on the filing fee. The legal question presented is whether federal law prohibits the poorest prisoners from splitting the $350 filing fee required to file a federal lawsuit.&lt;/p&gt;
+&lt;p&gt;Holding:
+The Supreme Court denied the petition for a writ of certiorari.&lt;/p&gt;
+&lt;p&gt;Reasoning:
+The majority declined to address the issue. Justice Kagan would have granted certiorari. Justice Sotomayor, joined by Justice Jackson, dissented from the denial. The dissent argued that the PLRA does not prohibit prisoners from splitting filing fees, citing Title 28 U.S.C. §1914(a), which allows parties to share the cost of a single case. The dissent found the Ninth Circuit’s decision, which required each prisoner to pay the full fee, to be an unreasonable interpretation of the statute and created an unfair result where prisoners with limited funds were disadvantaged compared to those with more resources. The dissent also noted a split among the Courts of Appeals on this issue.&lt;/p&gt;
+&lt;p&gt;Outcome:
+The petition for a writ of certiorari was denied. The Ninth Circuit’s decision affirming the requirement that each prisoner pay the full $350 filing fee remains in effect.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
