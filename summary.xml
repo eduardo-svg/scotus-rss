@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Mar 2026 15:42:33 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 05:49:51 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -402,6 +402,62 @@ The Supreme Court denied the petition for a writ of certiorari.&lt;/p&gt;
 The majority declined to address the issue. Justice Kagan would have granted certiorari. Justice Sotomayor, joined by Justice Jackson, dissented from the denial. The dissent argued that the PLRA does not prohibit prisoners from splitting filing fees, citing Title 28 U.S.C. §1914(a), which allows parties to share the cost of a single case. The dissent found the Ninth Circuit’s decision, which required each prisoner to pay the full fee, to be an unreasonable interpretation of the statute and created an unfair result where prisoners with limited funds were disadvantaged compared to those with more resources. The dissent also noted a split among the Courts of Appeals on this issue.&lt;/p&gt;
 &lt;p&gt;Outcome:
 The petition for a writ of certiorari was denied. The Ninth Circuit’s decision affirming the requirement that each prisoner pay the full $350 filing fee remains in effect.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-1021</guid>
+      <title>GALETTE v. NEW JERSEY TRANSIT CORP.</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-1021</link>
+      <pubDate>Wed, 04 Mar 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case involves a dispute over whether the New Jersey Transit Corporation (NJ Transit) is an "arm of the State" of New Jersey and therefore entitled to New Jersey's interstate sovereign immunity. The issue arose from two separate lawsuits filed in New York and Pennsylvania. Jeffrey Colt sued NJ Transit in New York after being struck by a bus, and Cedric Galette sued in Pennsylvania after being injured in a bus accident. Both plaintiffs argued NJ Transit was negligent. NJ Transit moved to dismiss both suits, claiming sovereign immunity. The New York Court of Appeals ruled against NJ Transit, while the Pennsylvania Supreme Court ruled in its favor. The Supreme Court of the United States granted certiorari to resolve the conflicting rulings.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;NJ Transit Corporation is not an arm of New Jersey and is not entitled to share in New Jersey’s interstate sovereign immunity.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court reasoned that sovereign immunity is personal to the State and extends only to its arms. Determining whether an entity is an arm of the State is a question of federal law, guided by state law defining the entity's character. The Court emphasized that the key factor is whether the State structured the entity as a legally separate entity liable for its own judgments. The Court found that NJ Transit was created as a corporation with traditional corporate powers, such as the ability to sue and be sued, hold property, and enter into contracts. While the State exerts control over NJ Transit, this does not negate its corporate status and legal separateness. The Court rejected arguments focusing on NJ Transit's public functions or its financial relationship with the State, emphasizing the importance of formal legal liability.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgment of the New York Court of Appeals was affirmed, and the judgment of the Pennsylvania Supreme Court was reversed. Both cases were remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/25A914</guid>
+      <title>MALLIOTAKIS v. WILLIAMS</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/25A914</link>
+      <pubDate>Mon, 02 Mar 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case involves an application for a stay of a New York Supreme Court order directing the New York Independent Redistricting Commission to redraw a congressional district to ensure minority voters can elect their preferred candidate. The legal question presented is whether this Court has jurisdiction to review and stay the New York court’s order.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;The applications for a stay presented to Justice Sotomayor were granted. The January 21, 2026, order entered by the Supreme Court of the State of New York is stayed pending the disposition of the appeal in the New York state courts and a petition for a writ of certiorari in this Court, if timely sought.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The majority reasoned that the New York Court of Appeals’ refusal to grant a stay or hear a direct appeal effectively constituted a final determination on the merits of the applicants’ claim that the injunction deprived them of their constitutional rights. They also found that a stay was “necessary or appropriate in aid of [this Court’s] jurisdiction” because delaying action could prevent this Court from reviewing the order if it reached them in time. Justice Alito, concurring, argued the New York court’s order blatantly discriminated on the basis of race, violating the Fourteenth Amendment’s Equal Protection Clause.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgment of the New York Supreme Court was stayed pending further proceedings in the New York state courts and potential review by this Court via a writ of certiorari. The stay will automatically terminate if certiorari is denied; it will terminate upon the issuance of the mandate of this Court if certiorari is granted.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/25A810</guid>
+      <title>MIRABELLI v. BONTA</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/25A810</link>
+      <pubDate>Mon, 02 Mar 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case involves an application to vacate a Ninth Circuit Court of Appeals order staying a permanent injunction entered by a District Court. The injunction was granted in favor of parents and teachers who claim that certain California policies violate their rights under the First Amendment’s Free Exercise Clause and the Fourteenth Amendment’s Due Process Clause. These policies restrict schools from informing parents about their children’s gender transitioning efforts without the children’s consent and require schools to use children’s preferred names and pronouns regardless of parental wishes. The case began in 2023 when teachers sought an exemption from school district policies regarding students’ gender, later joined by parents.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;The Court granted the application and vacated the Ninth Circuit’s stay with respect to the parents. The Court concluded that the parents who seek religious exemptions are likely to succeed on the merits of their Free Exercise Clause claim.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court reasoned that California’s policies likely trigger strict scrutiny under the Free Exercise Clause because they substantially interfere with the right of parents to guide the religious development of their children. The parents have sincere religious beliefs about gender transitioning and feel a religious obligation to raise their children accordingly. The Court also found that the State’s interest in student safety was not advanced by policies that exclude parents from decisions regarding their children’s mental health. The Court also found that the parents were likely to suffer irreparable harm if the Ninth Circuit’s stay remained in place. A concurring opinion emphasized the importance of adhering to established precedent regarding parental rights and questioned the Court’s decision to address the issue on an emergency docket rather than through the regular merits process.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The application to vacate the Ninth Circuit’s stay was granted as to the parents, effectively reinstating the District Court’s injunction. The stay was otherwise denied. The case will proceed to the Ninth Circuit Court of Appeals for further review.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-777</guid>
+      <title>URIAS-ORELLANA v. BONDI</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-777</link>
+      <pubDate>Wed, 04 Mar 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case concerns a challenge to a removal order issued against Douglas Humberto Urias-Orellana, his wife, and their minor child, who entered the United States without authorization. After being placed in removal proceedings, they applied for asylum, testifying that Urias-Orellana was being targeted by a hitman in El Salvador. An Immigration Judge (IJ) found Urias-Orellana’s testimony credible but denied their asylum applications, concluding they had not demonstrated past persecution or a well-founded fear of future persecution under the Immigration and Nationality Act (INA). The Board of Immigration Appeals (BIA) affirmed, and the U.S. Court of Appeals for the First Circuit also affirmed, holding that the record did not compel a contrary finding under the substantial-evidence standard. The legal question presented is whether the courts of appeals must apply substantial-evidence review to the BIA’s determination whether a given set of undisputed facts constitutes “persecution” under 8 U.S.C. §1101(a)(42).&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;The Court held that the INA requires application of the substantial-evidence standard to the agency’s determination whether a given set of undisputed facts rises to the level of persecution under §1101(a)(42)(A).&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court reasoned that Section 1252(b)(4) sets forth the scope and standard of review for courts of appeals evaluating IJ and BIA removal orders, requiring a deferential “substantial-evidence standard.” The Court referenced &lt;em&gt;Nasrallah v. Barr&lt;/em&gt; and &lt;em&gt;Biestek v. Berryhill&lt;/em&gt; to define substantial evidence. While courts of appeals have differed on the extent to which this standard applies to persecution determinations, the Court reiterated the standard established in &lt;em&gt;INS v. Elias-Zacarias&lt;/em&gt;, which requires showing that the evidence is “so compelling that no reasonable factfinder could fail to find the requisite fear of persecution.” Congress codified this standard with the addition of §1252(b)(4)(B). The Court rejected arguments for &lt;em&gt;de novo&lt;/em&gt; review, finding that &lt;em&gt;Wilkinson v. Garland&lt;/em&gt; and &lt;em&gt;Guerrero-Lasprilla v. Barr&lt;/em&gt; did not contradict this conclusion.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgment of the U.S. Court of Appeals for the First Circuit was affirmed. The case is remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
