@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Mar 2026 05:49:51 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 14:52:45 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -458,6 +458,20 @@ The petition for a writ of certiorari was denied. The Ninth Circuit’s decision
 &lt;p&gt;The Court reasoned that Section 1252(b)(4) sets forth the scope and standard of review for courts of appeals evaluating IJ and BIA removal orders, requiring a deferential “substantial-evidence standard.” The Court referenced &lt;em&gt;Nasrallah v. Barr&lt;/em&gt; and &lt;em&gt;Biestek v. Berryhill&lt;/em&gt; to define substantial evidence. While courts of appeals have differed on the extent to which this standard applies to persecution determinations, the Court reiterated the standard established in &lt;em&gt;INS v. Elias-Zacarias&lt;/em&gt;, which requires showing that the evidence is “so compelling that no reasonable factfinder could fail to find the requisite fear of persecution.” Congress codified this standard with the addition of §1252(b)(4)(B). The Court rejected arguments for &lt;em&gt;de novo&lt;/em&gt; review, finding that &lt;em&gt;Wilkinson v. Garland&lt;/em&gt; and &lt;em&gt;Guerrero-Lasprilla v. Barr&lt;/em&gt; did not contradict this conclusion.&lt;/p&gt;
 &lt;h2&gt;Outcome:&lt;/h2&gt;
 &lt;p&gt;The judgment of the U.S. Court of Appeals for the First Circuit was affirmed. The case is remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/25-5442</guid>
+      <title>BURNETT v. UNITED STATES</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/25-5442</link>
+      <pubDate>Mon, 09 Mar 2026 12:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Background:
+Jaron Burnett pleaded guilty to a federal crime and initially received a sentence of 105 months in prison followed by 15 years of supervised release. Subsequently, he faced multiple violations of his supervised release, leading to additional prison time. Burnett petitioned the Supreme Court for a writ of certiorari, arguing that the Sixth Amendment requires a jury trial and proof beyond a reasonable doubt when a court seeks to impose a sentence that would exceed the statutory maximum for his underlying crime. The legal question presented was whether the Sixth Amendment requires a jury trial and proof beyond a reasonable doubt when a defendant faces additional prison time for supervised release violations that would exceed the statutory maximum for the underlying conviction.&lt;/p&gt;
+&lt;p&gt;Holding:
+The Supreme Court denied the petition for a writ of certiorari.&lt;/p&gt;
+&lt;p&gt;Reasoning:
+The majority declined to review the case. Justice Gorsuch, dissenting from the denial, argued that Burnett’s case raised significant Sixth Amendment concerns. He contended that under &lt;em&gt;Apprendi v. New Jersey&lt;/em&gt;, any fact increasing a penalty beyond the statutory maximum must be decided by a jury and proven beyond a reasonable doubt. Burnett argued that the government should not be able to exceed the statutory maximum without a jury trial. The dissent highlighted the potential for defendants on long supervised release terms to effectively lose their right to a jury trial and reasonable doubt standard.&lt;/p&gt;
+&lt;p&gt;Outcome:
+The petition for a writ of certiorari was denied. The judgment of the court of appeals was affirmed, meaning Burnett’s additional sentence stands. Justice Gorsuch expressed hope that the Court would consider a similar case in the future and urged lower courts to carefully consider the Sixth Amendment’s application in these circumstances.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
