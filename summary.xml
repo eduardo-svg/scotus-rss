@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Mar 2026 14:52:45 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2026 19:37:27 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -472,6 +472,20 @@ The Supreme Court denied the petition for a writ of certiorari.&lt;/p&gt;
 The majority declined to review the case. Justice Gorsuch, dissenting from the denial, argued that Burnett’s case raised significant Sixth Amendment concerns. He contended that under &lt;em&gt;Apprendi v. New Jersey&lt;/em&gt;, any fact increasing a penalty beyond the statutory maximum must be decided by a jury and proven beyond a reasonable doubt. Burnett argued that the government should not be able to exceed the statutory maximum without a jury trial. The dissent highlighted the potential for defendants on long supervised release terms to effectively lose their right to a jury trial and reasonable doubt standard.&lt;/p&gt;
 &lt;p&gt;Outcome:
 The petition for a writ of certiorari was denied. The judgment of the court of appeals was affirmed, meaning Burnett’s additional sentence stands. Justice Gorsuch expressed hope that the Court would consider a similar case in the future and urged lower courts to carefully consider the Sixth Amendment’s application in these circumstances.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-993</guid>
+      <title>OLIVIER v. CITY OF BRANDON</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-993</link>
+      <pubDate>Fri, 20 Mar 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case involves Gabriel Olivier, a street preacher in Mississippi, who was convicted of violating a city ordinance restricting expressive activity near an amphitheater. The ordinance required permits for protests and demonstrations near the amphitheater. Olivier filed suit in federal court under 42 U.S.C. §1983, alleging the ordinance violated the First Amendment. The central legal question is whether the Supreme Court’s decision in &lt;em&gt;Heck v. Humphrey&lt;/em&gt; bars Olivier’s suit, which seeks only prospective relief (an injunction preventing future enforcement of the ordinance), despite his prior conviction.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;Olivier’s suit seeking purely prospective relief—an injunction stopping officials from enforcing the ordinance in the future—can proceed, notwithstanding Olivier’s prior conviction for violating that ordinance; &lt;em&gt;Heck&lt;/em&gt; does not hold otherwise.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court reasoned that &lt;em&gt;Heck&lt;/em&gt; prohibits using §1983 to challenge the validity of a prior conviction to obtain release from custody or monetary damages because it would constitute a collateral attack on the conviction. However, &lt;em&gt;Heck&lt;/em&gt; does not apply when a plaintiff seeks only wholly prospective relief, as Olivier does. The Court distinguished this case from &lt;em&gt;Heck&lt;/em&gt;, noting that Olivier’s suit does not challenge the validity of his prior conviction or risk conflicting judgments about his past conduct. The Court also referenced &lt;em&gt;Wooley v. Maynard&lt;/em&gt;, which held that a plaintiff could challenge a law’s constitutionality and seek prospective relief even after a prior conviction under that law.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgment of the Court of Appeals was reversed, and the case was remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
