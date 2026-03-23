@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Mar 2026 19:37:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 18:56:46 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -486,6 +486,49 @@ The petition for a writ of certiorari was denied. The judgment of the court of a
 &lt;p&gt;The Court reasoned that &lt;em&gt;Heck&lt;/em&gt; prohibits using §1983 to challenge the validity of a prior conviction to obtain release from custody or monetary damages because it would constitute a collateral attack on the conviction. However, &lt;em&gt;Heck&lt;/em&gt; does not apply when a plaintiff seeks only wholly prospective relief, as Olivier does. The Court distinguished this case from &lt;em&gt;Heck&lt;/em&gt;, noting that Olivier’s suit does not challenge the validity of his prior conviction or risk conflicting judgments about his past conduct. The Court also referenced &lt;em&gt;Wooley v. Maynard&lt;/em&gt;, which held that a plaintiff could challenge a law’s constitutionality and seek prospective relief even after a prior conviction under that law.&lt;/p&gt;
 &lt;h2&gt;Outcome:&lt;/h2&gt;
 &lt;p&gt;The judgment of the Court of Appeals was reversed, and the case was remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-1268</guid>
+      <title>REED v. GOERTZ</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-1268</link>
+      <pubDate>Mon, 23 Mar 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case concerns Rodney Reed, a death-row prisoner who has sought DNA testing of key evidence – a webbed belt used in the murder of Stacey Lee Stites – for over a decade. Reed maintains his innocence and claims Stites’s fiancé, a police officer named Jimmy Fennell, murdered her. Reed filed a lawsuit in federal court under 42 U.S.C. §1983, arguing that Texas’s postconviction DNA-testing statute, Article 64, violates the Fourteenth Amendment Due Process Clause. The legal question presented is whether the statute’s requirement of a “chain of custody” free from contamination, as interpreted by the Texas Court of Criminal Appeals (CCA), violates due process.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;The Supreme Court denied the petition for a writ of certiorari, declining to review the Fifth Circuit’s decision.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The majority declined to address the merits of Reed’s claim. Justice Sotomayor, joined by Justices Kagan and Jackson, dissented from the denial of certiorari. The dissent argued that the Fifth Circuit failed to squarely address Reed’s argument that the noncontamination requirement is arbitrary because DNA testing can yield accurate results even with some contamination. The dissent highlighted expert testimony suggesting that DNA analysis of the belt could reliably identify the perpetrator, regardless of contamination. The dissent expressed concern that the Court’s inaction could lead to the execution of an innocent person.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The petition for a writ of certiorari was denied. The dissent suggests the Court should have vacated the Fifth Circuit’s judgment and remanded the case for further consideration of Reed’s claim. The case remains unresolved, and Reed’s execution remains a possibility.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/25-297</guid>
+      <title>ZORN v. LINTON</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/25-297</link>
+      <pubDate>Mon, 23 Mar 2026 12:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Okay, here's the breakdown of the case, formatted as requested:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This case involves a protest at the Vermont state capitol on inauguration day. Shela Linton participated in a sit-in demanding universal healthcare and refused to leave when police ordered the protesters to disperse. Sergeant Jacob Zorn attempted to remove Linton, using a rear wristlock that Linton claimed caused injuries. Linton sued Zorn for excessive force in violation of the Fourth Amendment, alleging the arrest left her with arm injuries and psychological disorders. The Second Circuit denied Zorn qualified immunity, prompting this petition for certiorari. The legal question presented was whether the Second Circuit erred in holding that Zorn was not entitled to qualified immunity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Holding:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Court reversed the judgment of the Second Circuit, holding that Zorn was entitled to qualified immunity. The Court determined that the Second Circuit’s decision was erroneous.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reasoning:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Court reasoned that the Second Circuit improperly interpreted a prior decision, &lt;em&gt;Amnesty America v. West Hartford&lt;/em&gt;, to establish that Zorn’s conduct violated the Fourth Amendment. The Court stated that &lt;em&gt;Amnesty America&lt;/em&gt; did not clearly establish that using a routine wristlock to move a resistant protester after warnings violated the Constitution. The Court emphasized that a right is “clearly established” when it is “sufficiently clear that every reasonable official would have understood that what he is doing violates that right,” and that existing precedent must define the right with a “high degree of specificity.” The Court found that &lt;em&gt;Amnesty America&lt;/em&gt; lacked this specificity and did not put Zorn on notice that his actions were unlawful.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outcome:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The judgment of the Second Circuit was reversed. The petition for a writ of certiorari was granted.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/25-29</guid>
+      <title>VILLARREAL v. ALANIZ</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/25-29</link>
+      <pubDate>Mon, 23 Mar 2026 12:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Background:
+This case involves a petition for a writ of certiorari following a denial by the Fifth Circuit Court of Appeals. Priscilla Villarreal, a citizen journalist, was arrested in Texas for texting a police officer to corroborate information about community events she was reporting on. She alleges the arrest and subsequent charges were retaliatory, stemming from her critical reporting on local officials. The legal question presented is whether officials are entitled to qualified immunity when arresting a journalist for seeking information from a public official, particularly when the information is voluntarily provided and published. The case comes to the Court on a motion to dismiss, meaning the facts presented in Villarreal’s complaint are assumed to be true.&lt;/p&gt;
+&lt;p&gt;Holding:
+The Supreme Court denied the petition for a writ of certiorari. Justice Sotomayor, dissenting from the denial, asserts that the Court made a grave error by declining to hear the case.&lt;/p&gt;
+&lt;p&gt;Reasoning:
+Justice Sotomayor’s dissent argues that Villarreal’s arrest violated the First Amendment, as it targeted a routine journalistic practice – seeking information from public officials. She contends that the Fifth Circuit’s decision, upholding qualified immunity for the officials, was incorrect. The dissent emphasizes that the First Amendment protects the press's ability to inquire and obtain information, and that officials cannot punish journalists for asking questions. It further argues that the officials’ actions were an “obvious case” of First Amendment violation, and that the Fifth Circuit’s reasoning, relying on the existence of a state statute and a Magistrate Judge’s warrant, was flawed. The dissent also highlights the unusual nature of Villarreal’s arrest, as she was the first person in Webb County to be arrested under the relevant statute.&lt;/p&gt;
+&lt;p&gt;Outcome:
+The petition for a writ of certiorari was denied. Justice Sotomayor dissented from the denial, expressing concern that the Court’s inaction allows a potentially unconstitutional pattern of retaliatory actions against journalists to continue.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
