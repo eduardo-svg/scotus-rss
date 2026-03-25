@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Mar 2026 18:56:46 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 17:03:16 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -529,6 +529,35 @@ The Supreme Court denied the petition for a writ of certiorari. Justice Sotomayo
 Justice Sotomayor’s dissent argues that Villarreal’s arrest violated the First Amendment, as it targeted a routine journalistic practice – seeking information from public officials. She contends that the Fifth Circuit’s decision, upholding qualified immunity for the officials, was incorrect. The dissent emphasizes that the First Amendment protects the press's ability to inquire and obtain information, and that officials cannot punish journalists for asking questions. It further argues that the officials’ actions were an “obvious case” of First Amendment violation, and that the Fifth Circuit’s reasoning, relying on the existence of a state statute and a Magistrate Judge’s warrant, was flawed. The dissent also highlights the unusual nature of Villarreal’s arrest, as she was the first person in Webb County to be arrested under the relevant statute.&lt;/p&gt;
 &lt;p&gt;Outcome:
 The petition for a writ of certiorari was denied. Justice Sotomayor dissented from the denial, expressing concern that the Court’s inaction allows a potentially unconstitutional pattern of retaliatory actions against journalists to continue.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-171</guid>
+      <title>COX COMMUNICATIONS, INC. v. SONY MUSIC ENTERTAINMENT</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-171</link>
+      <pubDate>Wed, 25 Mar 2026 12:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Okay, here's the breakdown of the case, adhering to your instructions:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Cox Communications, Inc. is an Internet service provider. Sony Music Entertainment and other copyright owners enlisted MarkMonitor to track copyright infringement across the Internet, identifying IP addresses associated with illegal uploads and downloads. MarkMonitor sent Cox 163,148 notices identifying infringing IP addresses. Sony sued Cox, alleging contributory copyright infringement (Cox continued providing service to known infringers) and vicarious liability. The jury found Cox willfully infringed and awarded $1 billion in statutory damages. The Fourth Circuit affirmed the contributory liability finding but reversed on vicarious liability. The Supreme Court granted certiorari to review the contributory liability determination. The legal question before the Court was whether Cox was contributorily liable for its users’ copyright infringement.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Holding:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Court held that Cox is not contributorily liable for the copyright infringement of Sony’s copyrights. The Court reasoned that a provider of a service is contributorily liable only if it intended that the service be used for infringement, which can be shown only if the party induced the infringement or the provided service is tailored to that infringement.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reasoning:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Court explained that the Copyright Act does not expressly impose liability for the infringement of another. To establish contributory infringement, a copyright owner must show that the provider affirmatively induced the infringement or sold a service tailored to infringement. The Court distinguished this case from &lt;em&gt;Grokster&lt;/em&gt;, where the file-sharing software companies actively promoted their software for infringing purposes. Cox neither induced its users’ infringement nor provided a service tailored to infringement; it simply provided internet access, which has substantial non-infringing uses. The Fourth Circuit’s holding, which found liability based solely on a provider’s knowledge of infringement, exceeded the scope of established precedent.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outcome:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The judgment of the Fourth Circuit was reversed, and the case was remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-1056</guid>
+      <title>RICO v. UNITED STATES</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-1056</link>
+      <pubDate>Wed, 25 Mar 2026 12:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Background:
+The petitioner, Isabel Rico, violated the conditions of her supervised release after previously serving time for drug trafficking. She initially violated by failing to report a change of address, leading to revocation and a new term of supervised release. Subsequently, while absconding, she committed a state drug offense. The Ninth Circuit held that her drug offense could be considered a violation of her federal supervised release because her abscondment "tolled" the clock, extending her term. The Supreme Court granted certiorari to resolve a circuit split on whether abscondment automatically extends a term of supervised release.&lt;/p&gt;
+&lt;p&gt;Holding:
+The Sentencing Reform Act does not authorize a rule automatically extending a defendant’s term of supervised release when the defendant absconds.&lt;/p&gt;
+&lt;p&gt;Reasoning:
+The Court reasoned that the Ninth Circuit’s rule effectively extends a term of supervised release beyond what Congress intended, contradicting the Act’s specific instructions regarding extensions and tolling. The Act provides courts with tools to address violations but does not include an automatic extension for abscondment. The government’s arguments, including those based on supervision duties and precedent, were unconvincing. The Court distinguished prior cases and rejected the government’s policy argument that the warrant-or-summons requirement could leave courts powerless.&lt;/p&gt;
+&lt;p&gt;Outcome:
+The judgment of the Ninth Circuit was reversed and remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
