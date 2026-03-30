@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2026 17:03:16 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2026 17:57:44 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -558,6 +558,20 @@ The Sentencing Reform Act does not authorize a rule automatically extending a de
 The Court reasoned that the Ninth Circuit’s rule effectively extends a term of supervised release beyond what Congress intended, contradicting the Act’s specific instructions regarding extensions and tolling. The Act provides courts with tools to address violations but does not include an automatic extension for abscondment. The government’s arguments, including those based on supervision duties and precedent, were unconvincing. The Court distinguished prior cases and rejected the government’s policy argument that the warrant-or-summons requirement could leave courts powerless.&lt;/p&gt;
 &lt;p&gt;Outcome:
 The judgment of the Ninth Circuit was reversed and remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/25-1</guid>
+      <title>SKINNER v. LOUISIANA</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/25-1</link>
+      <pubDate>Mon, 30 Mar 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case involves James Skinner, who was convicted and sentenced to life in prison for the 1998 murder of Eric Walber. Skinner and his codefendant, Michael Wearry, were tried based on similar evidence, including eyewitness accounts. Wearry was previously convicted and sentenced to death, but this Court vacated his conviction because the prosecution violated its constitutional obligation to disclose favorable evidence. The legal question presented is whether Skinner is entitled to the same relief as Wearry, given that Skinner was also subject to the same constitutional violations.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;The petition for a writ of certiorari is denied. Justice Sotomayor, joined by Justice Jackson, dissented from the denial of certiorari.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The majority declined to grant certiorari, seemingly suggesting that the case was distinguishable from &lt;em&gt;Wearry v. Cain&lt;/em&gt;. Justice Sotomayor, in dissent, argued that the denial of certiorari perpetuated an injustice, as Skinner remains incarcerated despite the prosecution's failure to disclose the same favorable evidence to him that led to Wearry's release. She contended that Skinner, like Wearry, was entitled to the same relief and that the Louisiana courts erred in denying it. The dissent highlighted significant undisclosed evidence that undermined the credibility of key witnesses and pointed to alternative suspects, arguing that it should have created reasonable doubt about Skinner’s guilt. The dissent also criticized the state’s arguments as misrepresenting the record and failing to address the significant similarities between Skinner’s and Wearry’s cases.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The petition for a writ of certiorari was denied. Skinner remains incarcerated, although he has been authorized to file a successive habeas application in federal court.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
