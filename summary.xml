@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Mar 2026 17:57:44 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 15:02:54 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -572,6 +572,20 @@ The judgment of the Ninth Circuit was reversed and remanded for further proceedi
 &lt;p&gt;The majority declined to grant certiorari, seemingly suggesting that the case was distinguishable from &lt;em&gt;Wearry v. Cain&lt;/em&gt;. Justice Sotomayor, in dissent, argued that the denial of certiorari perpetuated an injustice, as Skinner remains incarcerated despite the prosecution's failure to disclose the same favorable evidence to him that led to Wearry's release. She contended that Skinner, like Wearry, was entitled to the same relief and that the Louisiana courts erred in denying it. The dissent highlighted significant undisclosed evidence that undermined the credibility of key witnesses and pointed to alternative suspects, arguing that it should have created reasonable doubt about Skinner’s guilt. The dissent also criticized the state’s arguments as misrepresenting the record and failing to address the significant similarities between Skinner’s and Wearry’s cases.&lt;/p&gt;
 &lt;h2&gt;Outcome:&lt;/h2&gt;
 &lt;p&gt;The petition for a writ of certiorari was denied. Skinner remains incarcerated, although he has been authorized to file a successive habeas application in federal court.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-539</guid>
+      <title>CHILES v. SALAZAR</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-539</link>
+      <pubDate>Tue, 31 Mar 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case concerns a Colorado law prohibiting licensed counselors from engaging in “conversion therapy” with minors. The law defines "conversion therapy" as any practice or treatment attempting to change an individual’s sexual orientation or gender identity. Kaley Chiles, a licensed counselor, filed suit in federal court seeking a preliminary injunction, arguing the law violated her First Amendment rights as it applied to her talk therapy practice. The procedural posture was an appeal from the Tenth Circuit, which denied Chiles’s request for a preliminary injunction, reasoning the law regulated professional conduct and speech only incidentally. The legal question presented was how the First Amendment interacts with laws like Colorado’s when applied to talk therapy.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;Colorado’s law banning conversion therapy, as applied to Ms. Chiles’s talk therapy, regulates speech based on viewpoint, and the lower courts erred by failing to apply sufficiently rigorous First Amendment scrutiny.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court reasoned that the First Amendment protects the right to speak freely, and laws regulating speech based on its subject matter or viewpoint trigger strict scrutiny. The Court found Colorado’s law regulated speech based on viewpoint by permitting counselors to express acceptance of a client’s identity but forbidding attempts to change it. The Court rejected Colorado’s argument that the law regulated professional conduct only incidentally, noting that the law directly targeted the content of speech. The Court also dismissed Colorado’s attempts to rely on historical traditions of permissible content regulation, finding none supported the State’s position.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgment of the Tenth Circuit was reversed and remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
