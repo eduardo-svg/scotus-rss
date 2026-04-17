@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2026 15:02:54 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 14:56:45 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -586,6 +586,20 @@ The judgment of the Ninth Circuit was reversed and remanded for further proceedi
 &lt;p&gt;The Court reasoned that the First Amendment protects the right to speak freely, and laws regulating speech based on its subject matter or viewpoint trigger strict scrutiny. The Court found Colorado’s law regulated speech based on viewpoint by permitting counselors to express acceptance of a client’s identity but forbidding attempts to change it. The Court rejected Colorado’s argument that the law regulated professional conduct only incidentally, noting that the law directly targeted the content of speech. The Court also dismissed Colorado’s attempts to rely on historical traditions of permissible content regulation, finding none supported the State’s position.&lt;/p&gt;
 &lt;h2&gt;Outcome:&lt;/h2&gt;
 &lt;p&gt;The judgment of the Tenth Circuit was reversed and remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-813</guid>
+      <title>CHEVRON USA INC. v. PLAQUEMINES PARISH</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-813</link>
+      <pubDate>Fri, 17 Apr 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case concerns the federal officer removal statute, 28 U.S.C. §1442(a)(1), which allows federal officers or those acting under them to remove state-court suits related to their official actions. Plaquemines Parish, Louisiana, and other parishes sued Chevron USA Inc. in state court, alleging that Chevron violated Louisiana’s coastal resources management act by failing to obtain permits for its crude-oil production during World War II. The legal question is whether this state-court environmental suit, challenging Chevron’s crude-oil production, is “for or relating to” Chevron’s wartime refining of crude oil into aviation gasoline for the U.S. military.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;Chevron has plausibly alleged a close relationship between its challenged crude-oil production and the performance of its federal avgas refining duties and has therefore satisfied the “relating to” requirement of the federal officer removal statute.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The majority opinion interprets "relating to" broadly, meaning "to stand in some relation; to have bearing or concern." It clarifies that a connection doesn't need to be direct or specifically designed to affect the federal duties, and a strict causal relationship isn't required. However, the connection must not be "tenuous, remote, or peripheral." The Court found Chevron’s crude-oil production was closely connected to its avgas refining, as the oil produced was used for its own refining, and the suit challenges actions that allowed Chevron to increase production during wartime. The Court disagreed with the Fifth Circuit’s reasoning that Chevron’s refining contract did not specify how to acquire crude oil and that the government’s allocation of crude oil severed any relation. Justice Jackson, concurring in the judgment, argued that the statute requires a causal nexus between the conduct and the federal duties, but agreed that Chevron satisfied this requirement.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgment of the Fifth Circuit was vacated and remanded for further proceedings consistent with the Supreme Court’s opinion.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
