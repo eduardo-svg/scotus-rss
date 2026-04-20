@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2026 14:56:45 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 14:51:41 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -600,6 +600,34 @@ The judgment of the Ninth Circuit was reversed and remanded for further proceedi
 &lt;p&gt;The majority opinion interprets "relating to" broadly, meaning "to stand in some relation; to have bearing or concern." It clarifies that a connection doesn't need to be direct or specifically designed to affect the federal duties, and a strict causal relationship isn't required. However, the connection must not be "tenuous, remote, or peripheral." The Court found Chevron’s crude-oil production was closely connected to its avgas refining, as the oil produced was used for its own refining, and the suit challenges actions that allowed Chevron to increase production during wartime. The Court disagreed with the Fifth Circuit’s reasoning that Chevron’s refining contract did not specify how to acquire crude oil and that the government’s allocation of crude oil severed any relation. Justice Jackson, concurring in the judgment, argued that the statute requires a causal nexus between the conduct and the federal duties, but agreed that Chevron satisfied this requirement.&lt;/p&gt;
 &lt;h2&gt;Outcome:&lt;/h2&gt;
 &lt;p&gt;The judgment of the Fifth Circuit was vacated and remanded for further proceedings consistent with the Supreme Court’s opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/25-248</guid>
+      <title>DISTRICT OF COLUMBIA v. R.W.</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/25-248</link>
+      <pubDate>Mon, 20 Apr 2026 12:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Background:
+This case involves a petition for a writ of certiorari to review a decision by the District of Columbia Court of Appeals. Following a radio dispatch call about a suspicious vehicle, a police officer observed two individuals fleeing from a car and the driver backing out with a door open. The officer stopped the driver, R.W., and subsequently charged him with several offenses. R.W. moved to suppress the evidence, arguing the officer lacked reasonable articulable suspicion to justify the seizure. The District of Columbia Court of Appeals reversed the denial of the motion to suppress, finding the officer’s actions violated the Fourth Amendment. The legal question presented is whether the officer had reasonable suspicion to stop R.W.&lt;/p&gt;
+&lt;p&gt;Holding:
+The Supreme Court reversed the District of Columbia Court of Appeals’ decision, holding that the officer did have reasonable suspicion to stop R.W.&lt;/p&gt;
+&lt;p&gt;Reasoning:
+The Court reasoned that, under the Fourth Amendment, a brief investigatory stop is permissible if supported by reasonable suspicion that criminal activity “may be afoot.” The Court emphasized the “totality of the circumstances” analysis, which precludes evaluating factors in isolation. The Court found the officer’s observations—a late-night dispatch call, two people fleeing the vehicle, and the driver’s unusual actions of backing out with a door open—collectively provided reasonable suspicion. The Court distinguished the District of Columbia Court of Appeals’ approach, which it deemed improperly “excis[ing]” certain factors from the analysis. Justice Sotomayor dissented, arguing the lower court’s analysis was not flawed and that the Court’s intervention was unwarranted.&lt;/p&gt;
+&lt;p&gt;Outcome:
+The judgment of the District of Columbia Court of Appeals was reversed, and the case was remanded for further proceedings not inconsistent with the Supreme Court’s opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/25-666</guid>
+      <title>FRANCISCO CASTRO v. BRITO GUEVARA</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/25-666</link>
+      <pubDate>Mon, 20 Apr 2026 12:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Background:
+This case involves a petition for a writ of certiorari concerning the standard of review a court of appeals should apply when reviewing a district court's finding of whether a child is "well settled" in a new environment under the Hague Convention on the Civil Aspects of International Child Abduction. The procedural posture is a petition for certiorari after the Fifth Circuit reversed a District Court decision and ordered the return of a child to Venezuela.&lt;/p&gt;
+&lt;p&gt;Holding:
+The Supreme Court denied the petition for a writ of certiorari.&lt;/p&gt;
+&lt;p&gt;Reasoning:
+The majority denied certiorari because the circumstances had changed significantly since the petition was filed. The child, previously living in the United States, had already returned to Venezuela. Justice Sotomayor, in a concurring opinion, argued that granting certiorari now would likely be detrimental to the child's well-being, as further disruption to her life would not be in her best interests. She also noted that the Court’s denial of an emergency stay previously exacerbated the situation. Justice Sotomayor highlighted a Circuit split regarding the appropriate standard of review (de novo vs. clear error) for these findings, and suggested that the "clear-error" standard, similar to the one applied in &lt;em&gt;Monasky&lt;/em&gt;, might be more appropriate.&lt;/p&gt;
+&lt;p&gt;Outcome:
+The petition for certiorari was denied. The child remains in Venezuela, and the Fifth Circuit’s decision ordering her return is not being revisited by the Supreme Court at this time.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
