@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Apr 2026 14:51:41 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 15:14:14 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -628,6 +628,34 @@ The Supreme Court denied the petition for a writ of certiorari.&lt;/p&gt;
 The majority denied certiorari because the circumstances had changed significantly since the petition was filed. The child, previously living in the United States, had already returned to Venezuela. Justice Sotomayor, in a concurring opinion, argued that granting certiorari now would likely be detrimental to the child's well-being, as further disruption to her life would not be in her best interests. She also noted that the Court’s denial of an emergency stay previously exacerbated the situation. Justice Sotomayor highlighted a Circuit split regarding the appropriate standard of review (de novo vs. clear error) for these findings, and suggested that the "clear-error" standard, similar to the one applied in &lt;em&gt;Monasky&lt;/em&gt;, might be more appropriate.&lt;/p&gt;
 &lt;p&gt;Outcome:
 The petition for certiorari was denied. The child remains in Venezuela, and the Fifth Circuit’s decision ordering her return is not being revisited by the Supreme Court at this time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-783</guid>
+      <title>ENBRIDGE ENERGY, LP v. NESSEL</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-783</link>
+      <pubDate>Wed, 22 Apr 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case involves a dispute between Enbridge Energy, LP, and the Michigan Attorney General regarding the operation of Enbridge’s Line 5 pipeline. The Attorney General filed suit in Michigan state court seeking to halt the pipeline’s operation, alleging the 1953 easement allowing its passage was void. Enbridge failed to remove the case to federal court within the 30-day deadline prescribed by 28 U.S.C. §1446(b)(1). Subsequently, the Michigan Governor revoked the easement and filed a separate lawsuit, which Enbridge timely removed to federal court. The central legal question before the Supreme Court was whether §1446(b)(1)’s 30-day removal deadline is subject to equitable tolling.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;The Supreme Court held that §1446(b)(1)’s text, structure, and context are inconsistent with equitable tolling, and therefore, Enbridge’s removal was untimely.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court reasoned that while non-jurisdictional deadlines can sometimes be subject to equitable tolling, the 30-day deadline in §1446(b)(1) is not. Even if a presumption of equitable tolling applied, it can be rebutted if Congress did not intend for it to apply. The Court found that the language of §1446(b)(1), its structure including specific exceptions for certain circumstances, and the broader statutory scheme all demonstrate that Congress did not intend for equitable tolling to be available. The Court emphasized the presence of several specific exceptions within §1446 and elsewhere, indicating Congress had already considered and addressed equitable considerations in specific situations. The Court also noted Congress’s focus on efficiency in removal proceedings and the potential for uncertainty and wasted resources if equitable tolling were broadly applied.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgment of the Sixth Circuit was affirmed. The lawsuit will be remanded to the Michigan state court.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-924</guid>
+      <title>HENCELY v. FLUOR CORP.</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-924</link>
+      <pubDate>Wed, 22 Apr 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case concerns a lawsuit brought by Winston Tyler Hencely, a former Army specialist, against Fluor Corporation, a military contractor, following a suicide bombing at Bagram Airfield in Afghanistan. Ahmad Nayeb, a Taliban operative employed by Fluor, carried out the attack, resulting in Hencely’s injuries. Hencely sued Fluor in South Carolina, alleging negligent supervision, negligent entrustment of tools, and negligent retention of Nayeb. The District Court and the Fourth Circuit affirmed summary judgment for Fluor, holding that state-law claims against military contractors during wartime, arising out of combatant activities, are preempted. The legal question presented is whether a state-law suit against a military contractor, operating in a war zone, is preempted even when the contractor was not ordered or authorized to take the action at issue.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;The Fourth Circuit erred in finding Hencely’s state-law tort claims preempted where the Federal Government neither ordered nor authorized Fluor’s challenged conduct.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court reasoned that neither the Constitution nor any federal statute expressly preempts Hencely’s suit. The Court distinguished the Fourth Circuit’s reliance on &lt;em&gt;Boyle v. United Technologies Corp.&lt;/em&gt;, noting that &lt;em&gt;Boyle&lt;/em&gt; involved a procurement contract, not a performance contract, and did not involve the FTCA’s combatant-activities exception. The Court emphasized that &lt;em&gt;Boyle&lt;/em&gt; requires a “significant conflict” between state law and a federal policy or interest, which does not exist here because Fluor’s conduct was not authorized by the military. The Court also rejected the argument that the Constitution’s structure implicitly bars this suit, noting that the assignment of war powers to Congress and the President has never been understood to bar all war-related tort suits.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgment of the Fourth Circuit was vacated and the case was remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
