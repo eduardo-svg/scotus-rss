@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2026 15:14:14 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 16:00:03 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -656,6 +656,34 @@ The petition for certiorari was denied. The child remains in Venezuela, and the 
 &lt;p&gt;The Court reasoned that neither the Constitution nor any federal statute expressly preempts Hencely’s suit. The Court distinguished the Fourth Circuit’s reliance on &lt;em&gt;Boyle v. United Technologies Corp.&lt;/em&gt;, noting that &lt;em&gt;Boyle&lt;/em&gt; involved a procurement contract, not a performance contract, and did not involve the FTCA’s combatant-activities exception. The Court emphasized that &lt;em&gt;Boyle&lt;/em&gt; requires a “significant conflict” between state law and a federal policy or interest, which does not exist here because Fluor’s conduct was not authorized by the military. The Court also rejected the argument that the Constitution’s structure implicitly bars this suit, noting that the assignment of war powers to Congress and the President has never been understood to bar all war-related tort suits.&lt;/p&gt;
 &lt;h2&gt;Outcome:&lt;/h2&gt;
 &lt;p&gt;The judgment of the Fourth Circuit was vacated and the case was remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-109_2026-04-29</guid>
+      <title>LOUISIANA v. CALLAIS</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-109_2026-04-29</link>
+      <pubDate>Wed, 29 Apr 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case concerns whether Louisiana’s new congressional map (SB8) constitutes an unconstitutional racial gerrymander. Following a redrawing of congressional districts in 2022, a federal judge held that the initial map likely violated Section 2 of the Voting Rights Act of 1965 (VRA) because it lacked an additional majority-black district. Louisiana subsequently drew a new map (SB8) including such a district, which was then challenged as a racial gerrymander. A three-judge court found SB8 violated the Equal Protection Clause of the Fourteenth Amendment, prompting Louisiana’s appeal to the Supreme Court. The Court had previously heard arguments on this case and recognized issues within existing Section 2 case law, particularly regarding the trigger for strict scrutiny in racial gerrymandering cases and whether VRA compliance justifies race-based districting. The legal question presented was whether compliance with the VRA can provide a compelling reason for race-based districting.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;Because the Voting Rights Act did not require Louisiana to create an additional majority-black district, no compelling interest justified the State’s use of race in creating SB8, and that map is an unconstitutional racial gerrymander.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court reasoned that the Constitution rarely permits racial discrimination, triggering strict scrutiny. The Court considered whether compliance with Section 2 of the VRA could constitute a “compelling interest” to justify such discrimination. The Court held that compliance with Section 2, properly construed, &lt;em&gt;can&lt;/em&gt; provide such an interest. The Court interpreted Section 2 to require examining the statutory text to understand its demands regarding legislative district drawing. A proper interpretation focuses on whether a minority voter has “less opportunity” than other voters to elect their preferred candidate, based on the districting criteria used. The Court updated the framework established in &lt;em&gt;Thornburg v. Gingles&lt;/em&gt; to align with the statutory text and recent developments, including social changes, the emergence of a two-party system, and the potential for partisan exploitation of Section 2 claims. The Court found that Louisiana’s creation of District 6 was motivated by a desire to comply with a prior court order, not a compelling interest.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgment of the lower court was affirmed and remanded. The case is sent back to the lower court for further proceedings consistent with the Supreme Court’s opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/24-781</guid>
+      <title>FIRST CHOICE WOMEN’S RESOURCE CENTERS, INC. v. DAVENPORT</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/24-781</link>
+      <pubDate>Wed, 29 Apr 2026 12:00:00 +0000</pubDate>
+      <description>&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;This case involves a challenge to a subpoena issued by the New Jersey Attorney General to First Choice Women’s Resource Centers, Inc., a religious nonprofit organization. The Attorney General, as part of a "Reproductive Rights Strike Force," issued a consumer alert accusing groups like First Choice of providing misleading abortion information. The subpoena demanded extensive donor information, including names, addresses, and places of employment, for donations made through various channels. First Choice sued in federal district court under 42 U.S.C. §1983, seeking to prevent the Attorney General from enforcing the subpoena and arguing it violated its First Amendment rights. The district court dismissed the complaint, holding First Choice lacked Article III standing. A divided panel of the Third Circuit affirmed. The legal question before the Supreme Court was whether First Choice had established a present injury to its First Amendment associational rights sufficient to confer Article III standing.&lt;/p&gt;
+&lt;h2&gt;Holding:&lt;/h2&gt;
+&lt;p&gt;First Choice has established a present injury to its First Amendment associational rights sufficient to confer Article III standing.&lt;/p&gt;
+&lt;h2&gt;Reasoning:&lt;/h2&gt;
+&lt;p&gt;The Court reasoned that Article III standing requires an injury in fact, which necessitates a concrete, particularized, and actual or imminent injury. The Court found that the Attorney General’s subpoena caused First Choice to suffer an ongoing injury to its First Amendment rights. The Court emphasized the importance of associational rights under the First Amendment, noting that compelled disclosure of affiliation with advocacy groups can restrain freedom of association. The Court rejected the Attorney General’s arguments that First Choice lacked standing because the subpoenas were “non-self-executing,” because First Choice could solicit funds through one specific website, or because a protective order might be issued in state court. The Court held that the mere issuance of a subpoena demanding private donor information is enough to chill associational rights and establish standing, regardless of whether the subpoena is enforced or a protective order is in place.&lt;/p&gt;
+&lt;h2&gt;Outcome:&lt;/h2&gt;
+&lt;p&gt;The judgment of the Third Circuit was reversed and remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
