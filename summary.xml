@@ -5,7 +5,7 @@
     <link>https://www.law.cornell.edu/supremecourt/text</link>
     <description>Model-written summaries corresponding to the main feed items.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2026 16:00:03 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 02:49:23 +0000</lastBuildDate>
     <item>
       <guid>https://www.law.cornell.edu/supremecourt/text/25A457</guid>
       <title>BOYD v. HAMM</title>
@@ -684,6 +684,20 @@ The petition for certiorari was denied. The child remains in Venezuela, and the 
 &lt;p&gt;The Court reasoned that Article III standing requires an injury in fact, which necessitates a concrete, particularized, and actual or imminent injury. The Court found that the Attorney General’s subpoena caused First Choice to suffer an ongoing injury to its First Amendment rights. The Court emphasized the importance of associational rights under the First Amendment, noting that compelled disclosure of affiliation with advocacy groups can restrain freedom of association. The Court rejected the Attorney General’s arguments that First Choice lacked standing because the subpoenas were “non-self-executing,” because First Choice could solicit funds through one specific website, or because a protective order might be issued in state court. The Court held that the mere issuance of a subpoena demanding private donor information is enough to chill associational rights and establish standing, regardless of whether the subpoena is enforced or a protective order is in place.&lt;/p&gt;
 &lt;h2&gt;Outcome:&lt;/h2&gt;
 &lt;p&gt;The judgment of the Third Circuit was reversed and remanded for further proceedings consistent with the Court’s opinion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid>https://www.law.cornell.edu/supremecourt/text/25A1197</guid>
+      <title>CALLAIS v. LOUISIANA</title>
+      <link>https://www.law.cornell.edu/supremecourt/text/25A1197</link>
+      <pubDate>Mon, 04 May 2026 12:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Background:
+The applicants, Callais, sought to have the judgment issued forthwith so the District Court could oversee an orderly process. The procedural posture involved an application to issue the judgment forthwith following a Supreme Court decision holding Louisiana’s congressional map unconstitutional. The legal question presented was whether the Court should depart from the standard 32-day period before issuing a judgment to allow for a petition for rehearing.&lt;/p&gt;
+&lt;p&gt;Holding:
+The application to issue the judgment forthwith was granted. The Court determined that good cause existed to depart from the default 32-day period.&lt;/p&gt;
+&lt;p&gt;Reasoning:
+The majority reasoned that the usual 32-day period for rehearing petitions was not necessary because the appellees had not indicated an intent to file such a petition. The Court also noted the urgency given the upcoming election and the need for prompt action. Justice Alito, joined by Justices Thomas and Gorsuch, concurred, criticizing the dissent's arguments as baseless and insulting, and arguing that the dissent’s insistence on adhering to the 32-day rule created the appearance of partiality. The dissent argued that the Court was improperly inserting itself into an ongoing election and disregarding established principles to influence the implementation of its decision.&lt;/p&gt;
+&lt;p&gt;Outcome:
+The judgment was issued forthwith. The District Court will now proceed to oversee the process related to the redrawing of the congressional map, and the state will be expected to comply with the Court’s decision.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
